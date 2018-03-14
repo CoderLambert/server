@@ -1,0 +1,23 @@
+<span style="font-size:14px;"><html>
+<head>
+    <title>CKEditor Sample</title>
+   
+</head>
+<body>
+{% load staticfiles %}
+
+ <script src="{% static "ckeditor/ckeditor.js" %}"></script>
+    <form method="post">
+        <p>
+            My Editor:<br>
+            <textarea name="editor1"><p>Initial value.</p></textarea>
+            <script>
+                CKEDITOR.replace( 'editor1' );
+            </script>
+        </p>
+        <p>
+            <input type="submit">
+        </p>
+    </form>
+</body>
+</html></span>  

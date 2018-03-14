@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+   {% block title %}
+       <title>文章详情</title>
+   {% endblock %}
+
+   <!--  主页文章内容   -->
+
+{% block navbar %}
+     {% load staticfiles %}
+     {% include 'navbar.html' %}
+{% endblock %}
+
+   {% block content %}
+
+       <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-1 column">
+            </div>
+		    <div class="col-md-10 column">
+                <div class="panel panel-primary">
+
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                  {{ articleInfo.title}}
+                                <small  style="padding:2em">
+                                    {{ articleInfo.update_time |date:"Y-m-d H:i:s" }}
+                                </small>
+                                <a class='label label-default pull-right' href="/admin/use_ckeditor/article/{{ articleInfo.id }}/change/">编辑</a>
+                            </h3>
+                        </div>
+
+                        <div class="panel-body" >
+                             {{ articleInfo.content| safe }}
+                        </div>
+                        <br>
+
+                        <div class="panel-footer">
+                            <span class="label label-info" style="margin-right: 4px">
+                                标签：
+                            </span>
+
+                            {% for tag in articleInfo.tag.all %}
+                                <span class="label label-success" style="margin: 4px">
+                                    {{  tag  }}
+                                </span>
+                            {% endfor %}
+                        </div>
+
+                        <br>
+
+                </div>
+		    </div>
+            <div class="col-md-1 column">
+            </div>
+        </div>
+       </div>
+
+   {% endblock %}
+
+

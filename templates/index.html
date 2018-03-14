@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+   {% block title %}
+       <title>博客首页</title>
+   {% endblock %}
+
+   <!--  主页文章内容   -->
+
+    {% block navbar %}
+         {% load staticfiles %}
+         {% include 'navbar.html' %}
+    {% endblock %}
+
+   {% block content %}
+      {%  include 'Artical_info.html' %}
+   {% endblock %}
+
+
+
+
+
