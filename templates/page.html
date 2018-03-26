@@ -1,0 +1,30 @@
+{#<div id="pagination">#}
+{#    {{ all_articals.render }}#}
+{#</div>#}
+
+{% load i18n %}
+<nav style="text-align: center">
+     <div class="pagination">
+        {% if all_articals.has_previous %}
+            <li><a href="?{{ all_articals.previous_page_number.querystring }}" class="prev">&lsaquo;&lsaquo; {% trans "previous" %}</a></li>
+        {% else %}
+            <li><span class="disabled prev">&lsaquo;&lsaquo; {% trans "previous" %}</span></li>
+        {% endif %}
+        {% for page in all_articals.pages %}
+            {% if page %}
+                {% ifequal page all_articals.number %}
+                    <li><span class="current page">{{ page }}</span></li>
+                {% else %}
+                    <li><a href="?{{ page.querystring }}" class="page">{{ page }}</a></li>
+                {% endifequal %}
+            {% else %}
+
+            {% endif %}
+        {% endfor %}
+        {% if all_articals.has_next %}
+            <li><a href="?{{ all_articals.next_page_number.querystring }}" class="next">{% trans "next" %} &rsaquo;&rsaquo;</a></li>
+        {% else %}
+            <li><span class="disabled next">{% trans "next" %} &rsaquo;&rsaquo;</span></li>
+        {% endif %}
+    </div>
+</nav>
