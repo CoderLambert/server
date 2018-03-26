@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'use_ckeditor.apps.UseCkeditorConfig',
     'ckeditor',
     'ckeditor_uploader',
+    'pure_pagination'
 ]
 
 MIDDLEWARE = [
@@ -181,4 +182,11 @@ CKEDITOR_CONFIGS = {
                 'elementspath'
             ]),
     }
+}
+
+#分页
+PAGINATION_SETTINGS = {
+    'PAGE_RANGE_DISPLAYED': 10,
+    'MARGIN_PAGES_DISPLAYED': 8,
+    'SHOW_FIRST_PAGE_WHEN_INVALID': True,
 }

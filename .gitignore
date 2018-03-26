@@ -85,6 +85,8 @@ env/
 venv/
 ENV/
 
+release/
+
 # Spyder project settings
 .spyderproject
 .spyproject
