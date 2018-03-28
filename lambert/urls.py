@@ -18,10 +18,16 @@ from django.urls import path
 from django.conf.urls import include, url
 from use_ckeditor.views import *
 
+import xadmin
+xadmin.autodiscover()
+
+from xadmin.plugins import xversion
+xversion.register_models()
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', HomePage),
     path('articalPage/<int:artical_id>/', ArticleInfo),
+    path(r'', xadmin.site.urls),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
 ]

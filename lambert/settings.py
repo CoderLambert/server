@@ -40,7 +40,11 @@ INSTALLED_APPS = [
     'use_ckeditor.apps.UseCkeditorConfig',
     'ckeditor',
     'ckeditor_uploader',
-    'pure_pagination'
+    'pure_pagination',
+    'xadmin',
+    'crispy_forms',
+    'reversion',
+
 ]
 
 MIDDLEWARE = [
