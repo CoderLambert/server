@@ -13,7 +13,7 @@
         {% for page in all_articals.pages %}
             {% if page %}
                 {% ifequal page all_articals.number %}
-                    <li><span class="current page">{{ page }}</span></li>
+                    <li class="active"><span class="active">{{ page }}</span></li>
                 {% else %}
                     <li><a href="?{{ page.querystring }}" class="page">{{ page }}</a></li>
                 {% endifequal %}
