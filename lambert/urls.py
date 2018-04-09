@@ -28,6 +28,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', HomePage),
     path('articalPage/<int:artical_id>/', ArticleInfo),
-    path(r'', xadmin.site.urls),
+    path(r'xadmin/', xadmin.site.urls),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
 ]

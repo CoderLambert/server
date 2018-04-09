@@ -41,11 +41,14 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
     'pure_pagination',
+    'users',
     'xadmin',
     'crispy_forms',
     'reversion',
 
 ]
+
+AUTH_USER_MODEL = "users.UserProfile"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
