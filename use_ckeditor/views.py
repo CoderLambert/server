@@ -2,7 +2,6 @@ from django.shortcuts import render,get_object_or_404
 from django.db.models import Q
 from .models import *
 from django.http import Http404
-
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 # Create your views here.
 def HomePage(request):
