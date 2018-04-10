@@ -15,7 +15,14 @@ class Category(models.Model):
         return self.name
 
 class Article(models.Model):
+    original_choice = (
+                        ("yes","是"),
+                        ("no","否"),
+                    )
+
     title = models.CharField('标题', max_length=256)
+    original = models.CharField(max_length=6,choices = original_choice, default = "yes",verbose_name="是否原创")
+    link_address = models.CharField(max_length=300,null=True,blank = True,verbose_name="转载地址")
     content = RichTextUploadingField('内容')
     pub_date = models.DateTimeField('发表时间', auto_now_add=True, editable=True)
     update_time = models.DateTimeField('更新时间',auto_now=True, null=True)

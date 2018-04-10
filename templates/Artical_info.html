@@ -14,6 +14,9 @@
                                 <small  style="padding:2em">
                                     {{ artical.update_time |date:"Y-m-d H:i:s" }}
                                 </small>
+                                {% ifequal artical.original "no" %}
+                                    <a href="{{ artical.link_address }}"> (转)</a>
+                                {% endifequal %}
 
                             </h3>
                         </div>
