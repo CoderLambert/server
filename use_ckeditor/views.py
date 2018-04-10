@@ -8,17 +8,20 @@ def HomePage(request):
 
     all_articals = Article.objects.all()
     artical_nums = all_articals.count()
-
+    web_list = Web_link.objects.all()
     try:
         page = request.GET.get('page', 1)
     except PageNotAnInteger:
         page = 1
     p = Paginator(all_articals, per_page=5, request=request)
     articals = p.page(page)
-    return render(request, 'index.html',{
+    return render(request, 'index.html',
+        {
         'all_articals':articals,
-    #'articals':articals,
-        'artical_nums':artical_nums})
+        'artical_nums':artical_nums,
+        'web_list':web_list
+        }
+                  )
 
 def ArticleInfo(request,artical_id):
     try:

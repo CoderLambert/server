@@ -20,4 +20,9 @@ class Article(models.Model):
     def __str__(self):
         return self.title
 
+class Web_link(models.Model):
+    name = models.CharField('name', max_length=256)
+    address = models.URLField('address',max_length = 256)
 
+    def __str__(self):
+        return self.name
