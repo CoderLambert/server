@@ -1,4 +1,5 @@
 from django.shortcuts import render,get_object_or_404
+from django.db.models import Q
 from .models import *
 from django.http import Http404
 
@@ -6,7 +7,13 @@ from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 # Create your views here.
 def HomePage(request):
 
-    all_articals = Article.objects.all()
+    if request.method == 'POST':
+        key_word = request.POST.get("keyword","")
+        #dic = {'title__icontains':key_word,'content__icontains':key_word}
+        all_articals = Article.objects.filter(Q(title__icontains=key_word) | Q(content__icontains=key_word))
+    else:
+        all_articals = Article.objects.all()
+
     artical_nums = all_articals.count()
     web_list = Web_link.objects.all()
     try:
