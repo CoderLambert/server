@@ -8,7 +8,7 @@ def HomePage(request):
     if request.method == 'POST':
         key_word = request.POST.get("keyword","")
         #dic = {'title__icontains':key_word,'content__icontains':key_word}
-        all_articals = Article.objects.filter(Q(title__icontains=key_word) | Q(content__icontains=key_word))
+        all_articals = Article.objects.filter(Q(title__icontains=key_word) | Q(text__icontains=key_word))
     else:
         all_articals = Article.objects.all()
 
