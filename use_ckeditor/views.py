@@ -5,7 +5,6 @@ from django.http import Http404
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 # Create your views here.
 def HomePage(request):
-
     if request.method == 'POST':
         key_word = request.POST.get("keyword","")
         #dic = {'title__icontains':key_word,'content__icontains':key_word}
