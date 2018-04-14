@@ -1,12 +1,12 @@
 from django.shortcuts import render
 from  django.contrib.auth import authenticate,login
 # Create your views here.
-def login(request):
+def Userlogin(request):
    if  request.method =='POST':
        user_name = request.POST.get("user_name","")
        pass_word = request.POST.get("user_password","")
-       user = authenticate(user_name,pass_word)
-       if user is not   None:
+       user = authenticate(username=user_name,password=pass_word)
+       if user is not None:
            login(request,user)
        return render(request, 'login.html', {})
 

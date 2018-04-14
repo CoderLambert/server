@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include, url
 from use_ckeditor.views import *
-from users.views import login
+from users.views import Userlogin
 import xadmin
 xadmin.autodiscover()
 from xadmin.plugins import xversion
@@ -27,7 +27,7 @@ xversion.register_models()
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', HomePage),
-    path('login/',login , name="login"),
+    path('login/',Userlogin, name="login"),
     path('articalPage/<int:artical_id>/', ArticleInfo),
     path(r'xadmin/', xadmin.site.urls),
 
