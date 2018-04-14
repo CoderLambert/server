@@ -1,0 +1,70 @@
+
+<html xmlns="http://www.25years/sign.html"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+{% load static %}
+<title>Wopop</title>
+<link href="/static/Wopop_files/style_log.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="/static/Wopop_files/style.css">
+<link rel="stylesheet" type="text/css" href="/static/Wopop_files/userpanel.css">
+<link rel="stylesheet" type="text/css" href="/static/Wopop_files/jquery.ui.all.css">
+
+</head>
+
+<body class="login" mycollectionplug="bind">
+<form action="/login/" method="post" autocomplete="off">
+<div class="login_m">
+<div class="login_boder">
+
+<div class="login_padding" id="login_model">
+  <h2>用户名</h2>
+  <label>
+    <input type="text"  name="user_name" id="username" class="txt_input " value="">
+  </label>
+
+  <h2>密码</h2>
+  <label>
+    <input type="password" name="user_password" id="userpwd" class="txt_input"  value="">
+  </label>
+
+  <p class="forgot"><a id="iforget" href="setpwd">忘记密码?</a></p>
+  <div class="rem_sub">
+  <div class="rem_sub_l">
+  <input type="checkbox" name="checkbox" id="save_me">
+   <label for="checkbox">记住我</label>
+   </div>
+    <label>
+      <input type="submit" class="sub_button" name="button" id="button" value="登录" >
+    </label>
+  </div>
+</div>
+
+
+<div id="forget_model" class="login_padding" style="display:none">
+    <br>
+       <h1>忘记密码</h1>
+    <br>
+   <div class="forget_model_h2">(Please enter your registered email below and the system will automatically reset users’ password and send it to user’s registered email address.)</div>
+    <label>
+    <input type="text" id="usrmail" class="txt_input txt_input2">
+   </label>
+
+ 
+  <div class="rem_sub">
+  <div class="rem_sub_l">
+   </div>
+    <label>
+     <input type="submit" class="sub_buttons" name="button" id="Retrievenow" value="Retrieve now">
+     　　　
+     <input type="submit" class="sub_button" name="button" id="denglou" value="Return" >　　
+    
+    </label>
+  </div>
+</div>
+<!--login_padding  Sign up end-->
+</div><!--login_boder end-->
+
+</div><!--login_m end-->
+    {% csrf_token %}
+</form>
+
+ <br> <br>
+</body></html>

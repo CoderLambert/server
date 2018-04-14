@@ -137,7 +137,7 @@ STATICFILES_DIRS = (
 )
 
 
-MEDIA_URL = "image_upload/"
+MEDIA_URL = "/image_upload/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "image_upload")
 
 CKEDITOR_UPLOAD_SLUGIFY_FILENAME = False
@@ -151,7 +151,7 @@ CKEDITOR_UPLOAD_PATH = "image_upload/"
 CKEDITOR_CONFIGS = {
     'default': {
         'skin':'moono',
-        'language': 'zh',
+        'language': 'zh-cn',
         'toolbar': (
             ['div', 'Source', '-', 'Save', 'NewPage', 'Preview', '-', 'Templates'],
             ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Print', 'SpellChecker', 'Scayt'],
