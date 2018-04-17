@@ -20,7 +20,7 @@ class  UserProfile( AbstractUser ):
 
     mobile  = models.CharField( max_length = 11, default= "" ,verbose_name="手机号")
 
-    image  = models.ImageField(upload_to="images/%Y%m", default="images/default.jpg", verbose_name="用户头像")
+    image  = models.ImageField(upload_to="images/%Y/%m", default="images/default.jpg",max_length=100, verbose_name="用户头像")
 
     class Meta:
         verbose_name = "用户信息"

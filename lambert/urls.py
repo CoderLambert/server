@@ -16,7 +16,9 @@ Including another URLconf
 from django.views.generic import TemplateView
 from django.contrib import admin
 from django.urls import path
-from django.conf.urls import include, url
+from django.conf.urls import include, url,re_path
+from django.views.static import serve
+from lambert.settings import MEDIA_ROOT
 from use_ckeditor.views import *
 from users.views import Userlogin
 import xadmin
@@ -30,6 +32,6 @@ urlpatterns = [
     path('login/',Userlogin, name="login"),
     path('articalPage/<int:artical_id>/', ArticleInfo),
     path(r'xadmin/', xadmin.site.urls),
-
+    re_path('image_upload/(?P<path>.*)', serve, {"document_root": MEDIA_ROOT }),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
 ]

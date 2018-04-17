@@ -72,8 +72,11 @@ TEMPLATES = [
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
+                'django.template.context_processors.media', #解决template 里面{{ MEDIA_URL }}无法使用
+
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
             ],
         },
     },
@@ -137,8 +140,10 @@ STATICFILES_DIRS = (
 )
 
 
-MEDIA_URL = "/image_upload/"
-MEDIA_ROOT = os.path.join(BASE_DIR, "image_upload")
+# 设置上传文件的路径
+
+MEDIA_URL = '/image_upload/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'image_upload')
 
 CKEDITOR_UPLOAD_SLUGIFY_FILENAME = False
 CKEDITOR_JQUERY_URL = 'http://libs.baidu.com/jquery/2.0.3/jquery.min.js'
