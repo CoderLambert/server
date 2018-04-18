@@ -14,6 +14,15 @@
           <ul class="nav navbar-nav">
             <li><a href="/xadmin">管理员 <span class="sr-only">(current)</span></a></li>
 
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新增文章 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="/xadmin/use_ckeditor/article/add/">富文本格式</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Markdown</a></li>
+              </ul>
+            </li>
+
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">常用站点链接 <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -41,26 +50,13 @@
 {#            这儿需要对 登陆状态进行检测  然后显示不同的状态  #}
 
               {% if request.user.is_authenticated %}
-                  <li>
-                      <img width="20" height="20" src="{{ MEDIA_URL }}{{ user.image }}"/>
-                      <a href="">welcom  {{ user.username  }}</a>
+                  <li style="padding: 0px ">
+                      <a href=""><img width="35px" height="35px" src="{{ MEDIA_URL }}{{ user.image }}"/> &nbsp;{{ user.username  }}</a>
                   </li>
-
-
                   {% else %}
                       <li><a href="/login/">登录</a></li>
               {% endif %}
-              <li><a href=""></a></li>
 
-
-              <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新增文章 <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                  <li><a href="/xadmin/use_ckeditor/article/add/">富文本格式</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Markdown</a></li>
-              </ul>
-            </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
