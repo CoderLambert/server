@@ -64,7 +64,13 @@
 </div><!--login_boder end-->
 </div><!--login_m end-->
 </form>
-<p>{{ error_msg }}</p>
+<p>
+    {{ error_msg }}<br>
+    {% for key,error in login_form.errors.items %}
+    {{ key }}:{{ error }}
+
+    {% endfor %}
+</p>
 
  <br> <br>
 </body></html>
