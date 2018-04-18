@@ -1,7 +1,10 @@
 from django.shortcuts import render
 from django.contrib.auth import authenticate,login
 from django.contrib.auth.backends import ModelBackend
+# 并集运算
 from django.db.models import Q
+# 基于类实现需要继承的view
+from django.views.generic.base import View
 
 from use_ckeditor.models import *
 from users.models import UserProfile
@@ -21,23 +24,20 @@ class CustomBackend(ModelBackend):
         except Exception as e:
             return None
 
+class LoginView(View):
+    def get(self,request):
+        return render(request, 'login.html', {})
 
-def Userlogin(request):
-   if  request.method =='POST':
-       user_name = request.POST.get("user_name","")
-       pass_word = request.POST.get("user_password","")
-       user = authenticate(username=user_name,password=pass_word)
-       #用户登录分两步   第一步认证通过则user是对象，否则是None
-       if user is not None:
-           #第二步 login，向request里面写东西，然后返回到render里面
-           login(request,user)
-           #正常应该返回到首页
-
-           return render(request, 'index.html',
-                         {
-                         }
-                         )
-       else:
-           return render(request, 'login.html', {"error_msg":"没有此用户，请检查用户名或密码"})
-   elif request.method == "GET":
-       return render(request,'login.html',{})
+    def post(self,request):
+        user_name = request.POST.get("user_name", "")
+        pass_word = request.POST.get("user_password", "")
+        user = authenticate(username=user_name, password=pass_word)
+        # 用户登录分两步   第一步认证通过则user是对象，否则是None
+        if user is not None:
+            # 第二步 login，向request里面写东西，然后返回到render里面
+            login(request, user)
+            # 正常应该返回到首页
+            return render(request, 'index.html',{}
+                          )
+        else:
+            return render(request, 'login.html', {"error_msg": "没有此用户，请检查用户名或密码"})

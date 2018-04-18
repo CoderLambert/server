@@ -20,7 +20,7 @@ from django.conf.urls import include, url,re_path
 from django.views.static import serve
 from lambert.settings import MEDIA_ROOT
 from use_ckeditor.views import *
-from users.views import Userlogin
+from users.views import LoginView
 import xadmin
 xadmin.autodiscover()
 from xadmin.plugins import xversion
@@ -29,7 +29,7 @@ xversion.register_models()
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', HomePage),
-    path('login/',Userlogin, name="login"),
+    path('login/',LoginView.as_view(), name="login"),
     path('articalPage/<int:artical_id>/', ArticleInfo),
     path(r'xadmin/', xadmin.site.urls),
     re_path('image_upload/(?P<path>.*)', serve, {"document_root": MEDIA_ROOT }),
