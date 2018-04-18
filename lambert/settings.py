@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
-    'django.contrib.sessions',
+    'django.contrib.sessions',#这个App会对request做拦截，取出request session id  做查询取出session data（在session表里）然后转换为user信息，
+                                # 当我们通过response返回给后台，当我们返回httpresponse时，它会把用户信息转换为session id，
+                                #如果注释掉，自动登录就会失效
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'use_ckeditor.apps.UseCkeditorConfig',
