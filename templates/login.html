@@ -11,6 +11,7 @@
 
 <body class="login" mycollectionplug="bind">
 <form action="/login/" method="post" autocomplete="off">
+        {% csrf_token %}
 <div class="login_m">
 <div class="login_boder">
 
@@ -61,10 +62,9 @@
 </div>
 <!--login_padding  Sign up end-->
 </div><!--login_boder end-->
-
 </div><!--login_m end-->
-    {% csrf_token %}
 </form>
+<p>{{ error_msg }}</p>
 
  <br> <br>
 </body></html>
