@@ -51,6 +51,8 @@ INSTALLED_APPS = [
     'xadmin',
     'crispy_forms',
     'reversion',
+    'captcha',#验证码插件
+
 
 ]
 

@@ -5,10 +5,12 @@ from django.contrib.auth.backends import ModelBackend
 from django.db.models import Q
 # 基于类实现需要继承的view
 from django.views.generic.base import View
+#密码明文加密
+from django.contrib.auth.hashers import make_password
 
 from use_ckeditor.models import *
 from users.models import UserProfile
-from .forms import LoginForm
+from .forms import LoginForm,RegisterForm
 # Create your views here.
 
 class CustomBackend(ModelBackend):
@@ -47,3 +49,31 @@ class LoginView(View):
                 return render(request, 'login.html', {"error_msg": "没有此用户，请检查用户名或密码是否正确"})
         else:
             return render(request, 'login.html', {"login_form":login_form})
+
+
+class RegisterView(View):
+    def get(self,request):
+        register_form = RegisterForm()
+        return render(request, 'register.html', {
+                'register_form': register_form})
+    def post(self,request):
+        register_form = RegisterForm(request.POST)
+        # 1.  先判断是否通过验证
+        if register_form.is_valid():
+            user_name = request.POST.get("email", "")
+
+            if UserProfile.objects.filter(email=user_name):
+                return render(request, 'register.html', {"register_form": register_form,"msg": "用户已存在"})
+            else:
+                pass_word = request.POST.get("password", "")
+                # 实例化一个user_profile对象，将前台值存入
+                user_profile = UserProfile()
+                user_profile.username = user_name
+                user_profile.email = user_name
+                user_profile.password = make_password(pass_word)
+                # 默认激活状态为false
+                user_profile.is_active = True
+                user_profile.save()
+                return render(request, "login.html", )
+        else:
+            return render(request, 'register.html', {"register_form":register_form})
