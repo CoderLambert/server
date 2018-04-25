@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'reversion',
     'captcha',#验证码插件
-
+    'markdown',#editor.md
 
 ]
 
