@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+   {% block title %}
+       <title>博客首页</title>
+   {% endblock %}
+
+   <!--  主页文章内容   -->
+
+    {% block navbar %}
+         {% load staticfiles %}
+         {% include 'navbar.html' %}
+    {% endblock %}
+
+   {% block content %}
+          <div class="container-fluid">
+    	<div class="row clearfix">
+		    <div class="col-md-2 column">
+		    </div>
+		    <div class="col-md-8 column">
+                <div class="panel panel-primary">
+{#                    {% for artical in all_articals.object_list %}#}
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a href="markdownPage/{{ articleInfo.id }}">
+                                  {{ articleInfo.title}}
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="panel-body">
+                            {{ articleInfo.artical_html }}
+                        </div>
+                        <br>
+
+{#                        <div class="panel-footer">#}
+{#                            <span class="label label-info" style="margin-right: 4px">#}
+{#                                标签：#}
+{#                            </span>#}
+{##}
+{#                            {% for tag in artical.tag.all %}#}
+{#                                <span class="label label-success" style="margin: 4px">#}
+{#                                    {{  tag  }}#}
+{#                                </span>#}
+{#                            {% endfor %}#}
+{#                        </div>#}
+
+                        <br>
+{#                    {% endfor %}#}
+
+                </div>
+            {% include "page.html" %}
+
+		    </div>
+		    <div class="col-md-2 column">
+		    </div>
+
+
+
+        </div>
+    </div>
+
+           <!--js开始-->
+    <script type="text/javascript">
+        //markDown转HTMl的方法
+
+        $(function(){
+{#            {% for i in artical %}#}
+            //先对容器初始化，在需要展示的容器中创建textarea隐藏标签，
+            $("#testEditorMdview{{ i.id }}").html('<textarea id="appendTest{{ i.id }}" style="display:none;"></textarea>');
+            var content=$("#{{ i.id }}").val();//获取需要转换的内容
+            $("#appendTest{{ i.id }}").val(content);//将需要转换的内容加到转换后展示容器的textarea隐藏标签中
+
+            //转换开始,第一个参数是上面的div的id
+            editormd.markdownToHTML("testEditorMdview{{ i.id }}", {
+                htmlDecode: "style,script,iframe", //可以过滤标签解码
+                emoji: true,
+                taskList:true,
+                tex: true,               // 默认不解析
+                flowChart:true,         // 默认不解析
+                sequenceDiagram:true,  // 默认不解析
+            });
+{#{% endfor %}#}
+        })
+    </script>
+     <!--js结束-->
+   {% endblock %}
+
+

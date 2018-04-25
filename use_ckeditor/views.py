@@ -31,6 +31,21 @@ def HomePage(request):
 def ArticleInfo(request,artical_id):
     try:
         articleInfo = Article.objects.get(pk=artical_id)   #当 get 取不到值的时候会出现 DoesNotExist 异常，所以要保护一下
+        artical_nums = articleInfo.count()
+        web_list = Web_link.objects.all()
+        try:
+            page = request.GET.get('page', 1)
+        except PageNotAnInteger:
+            page = 1
+        p = Paginator(articleInfo, per_page=5, request=request)
+        articals = p.page(page)
+        return render(request, 'index.html',
+                      {
+                          'all_articals': articleInfo,
+                          'artical_nums': artical_nums,
+                          'web_list': web_list
+                      }
+                      )
         return  render(request,"artical_page.html",{'articleInfo':articleInfo})
     except:
         return render(request, "error.html")

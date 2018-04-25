@@ -6,8 +6,18 @@ from django.conf import settings
 from django.http import HttpResponse
 import json
 # Create your views here.
+from django.shortcuts import render,get_object_or_404
 from django.views.decorators.csrf import csrf_exempt
 from  markdown import settings as markdown_settings
+from .models import markdownArtical
+
+def MarkdownInfo(request,artical_id):
+    try:
+        articleInfo = markdownArtical.objects.get(pk=artical_id)   #当 get 取不到值的时候会出现 DoesNotExist 异常，所以要保护一下
+        #print (articleInfo[1].artical_html)
+        return  render(request,"markdown_page.html",{'articleInfo':articleInfo})
+    except:
+        return render(request, "error.html")
 
 @csrf_exempt
 def upload_image(request):
