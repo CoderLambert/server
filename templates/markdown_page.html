@@ -27,9 +27,7 @@
    {% block content %}
         <!--输入需要转换的markdown文件开始-->
         <div style="display:none;">
-                    <textarea id="{{ articleInfo.id }}" style="width:800px;height:300px;">
-                            {{ articleInfo.markdown_text }}
-                    </textarea>
+                    <textarea id="{{ articleInfo.id }}" style="width:800px;height:300px;">{{ articleInfo.markdown_text }}</textarea>
         <!--输入需要转换的markdown文件结束-->
         </div>
     <!--在该div中展示,如有初始化的数据可以放在textarea中-->
