@@ -1,0 +1,48 @@
+{% block artical %}
+    <div class="container-fluid">
+    	<div class="row clearfix">
+		    <div class="col-md-2 column">
+		    </div>
+
+		    <div class="col-md-8 column">
+                <div class="panel panel-primary">
+                    {% for artical in all_articals.object_list %}
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a href="/markdownPage/{{ artical.id }}">
+                                  {{ artical.title}}
+                                </a>
+{#                                <small  style="padding:2em">#}
+{#                                    {{ artical.update_time |date:"Y-m-d H:i:s" }}#}
+{#                                </small>#}
+{#                                {% ifequal artical.original "no" %}#}
+{#                                    <a href="{{ artical.link_address }}"> (转)</a>#}
+{#                                {% endifequal %}#}
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            {{ artical.markdown_text |safe|truncatewords:40 }}
+                        </div>
+                        <br>
+                        <div class="panel-footer">
+{#                            <span class="label label-info" style="margin-right: 4px">#}
+{#                                标签：#}
+{#                            </span>#}
+{##}
+{#                            {% for tag in artical.tag.all %}#}
+{#                                <span class="label label-success" style="margin: 4px">#}
+{#                                    {{  tag  }}#}
+{#                                </span>#}
+{#                            {% endfor %}#}
+                        </div>
+                        <br>
+                    {% endfor %}
+                </div>
+            {% include "page.html" %}
+		    </div>
+		    <div class="col-md-2 column">
+		    </div>
+        </div>
+      </div>
+
+{% endblock %}

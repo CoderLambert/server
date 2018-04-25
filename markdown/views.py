@@ -1,15 +1,52 @@
 #-*- coding:utf-8 -*-
 import os
-
 import time
+import json
+from django.db.models import Q
+from django.http import Http404
 from django.conf import settings
 from django.http import HttpResponse
-import json
-# Create your views here.
 from django.shortcuts import render,get_object_or_404
 from django.views.decorators.csrf import csrf_exempt
-from  markdown import settings as markdown_settings
+
 from .models import markdownArtical
+from use_ckeditor.models import Web_link
+from markdown import settings as markdown_settings
+from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
+
+# Create your views here.
+def Markdown(request):
+    if request.method == 'POST':
+        key_word = request.POST.get("keyword","")
+        #dic = {'title__icontains':key_word,'content__icontains':key_word}
+        all_articals = markdownArtical.objects.filter(Q(title__icontains=key_word) | Q(markdown_text__icontains=key_word))
+    else:
+        all_articals = markdownArtical.objects.all()
+
+    artical_nums = all_articals.count()
+    web_list = Web_link.objects.all()
+    try:
+        page = request.GET.get('page', 1)
+    except PageNotAnInteger:
+        page = 1
+    p = Paginator(all_articals, per_page=5, request=request)
+    articals = p.page(page)
+    return render(request, 'markdown_index.html',
+        {
+        'all_articals':articals,
+        'artical_nums':artical_nums,
+        'web_list':web_list
+        }
+                  )
+
+
+    # try:
+    #     articleInfo = markdownArtical.objects.all(pk=artical_id)   #当 get 取不到值的时候会出现 DoesNotExist 异常，所以要保护一下
+    #     #print (articleInfo[1].artical_html)
+    #     return  render(request,"markdown_page.html",{'articleInfo':articleInfo})
+    # except:
+    #     return render(request, "error.html")
+
 
 def MarkdownInfo(request,artical_id):
     try:
