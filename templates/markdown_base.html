@@ -8,11 +8,16 @@
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
 
     {% block title %} {% endblock %}
+    {% include 'Bootstrap_CSS_CDN.html' %}
     {% block static_js %} {% endblock %}
 </head>
 <body>
-    {% block navbar %}  {% endblock %}
+    {% block navbar %}
+         {% load staticfiles %}
+         {% include 'navbar.html' %}
+    {% endblock %}
     {% block content %} {% endblock %}
+{% include "Bootstrap_JS_CDN.html" %}
 
 </body>
 

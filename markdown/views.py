@@ -51,8 +51,13 @@ def Markdown(request):
 def MarkdownInfo(request,artical_id):
     try:
         articleInfo = markdownArtical.objects.get(pk=artical_id)   #当 get 取不到值的时候会出现 DoesNotExist 异常，所以要保护一下
-        #print (articleInfo[1].artical_html)
-        return  render(request,"markdown_page.html",{'articleInfo':articleInfo})
+        web_list = Web_link.objects.all()
+
+        return  render(request,"markdown_page.html",
+                       {
+                           'articleInfo':articleInfo,
+                           'web_list':web_list}
+                       )
     except:
         return render(request, "error.html")
 
