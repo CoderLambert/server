@@ -20,7 +20,7 @@ from django.conf.urls import include, url,re_path
 from django.views.static import serve
 from lambert.settings import MEDIA_ROOT
 
-from users.views import LoginView,RegisterView
+from users.views import LoginView,RegisterView,UserActiveView
 from use_ckeditor.views import *
 from markdown.views import Markdown, MarkdownInfo
 
@@ -34,11 +34,14 @@ urlpatterns = [
     path('', HomePage,name="index"),
     path('login/',LoginView.as_view(), name="login"),
     path('register/',RegisterView.as_view(), name="register"),
+    path('active/<activecode>/', UserActiveView.as_view(), name="user_active"),
     path('articalPage/<int:artical_id>/', ArticleInfo, name="rich_page"),
     path('markdown/', Markdown, name ="markdown_index"),
     path(r'markdownPage/<int:artical_id>/', MarkdownInfo,name="markdown_page"),
     path(r'xadmin/', xadmin.site.urls),
+
     re_path('image_upload/(?P<path>.*)', serve, {"document_root": MEDIA_ROOT }),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
     url(r'^captcha/', include('captcha.urls')),
+
 ]

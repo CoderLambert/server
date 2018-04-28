@@ -11,6 +11,7 @@ from django.contrib.auth.hashers import make_password
 from use_ckeditor.models import *
 from users.models import UserProfile
 from .forms import LoginForm,RegisterForm
+from utils.eamil_send import send_email
 # Create your views here.
 
 class CustomBackend(ModelBackend):
@@ -70,10 +71,19 @@ class RegisterView(View):
                 user_profile = UserProfile()
                 user_profile.username = user_name
                 user_profile.email = user_name
-                user_profile.password = make_password(pass_word)
+                user_profile.password = make_password(pass_word)  #密码明文加密
                 # 默认激活状态为false
                 user_profile.is_active = True
                 user_profile.save()
+
+                send_email(user_name,"register")
+                pass
                 return render(request, "login.html", )
         else:
             return render(request, 'register.html', {"register_form":register_form})
+
+class UserActiveView(View):
+    def get(self,request,avtive_code):
+        print(avtive_code)
+        return render(request, "login.html", {})
+
