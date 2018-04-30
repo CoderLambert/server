@@ -63,11 +63,11 @@
 </div><!--login_boder end-->
 </div><!--login_m end-->
 </form>
-<p>
+<p>    {{ msg }}  </p>
+
     {{ error_msg }}<br>
     {% for key,error in login_form.errors.items %}
     {{ key }}:{{ error }}
-
     {% endfor %}
 </p>
 

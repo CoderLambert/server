@@ -31,9 +31,13 @@ def send_email(email,send_type="register"):
         email_message = "请点击下面的链接激活你的账号：http://localhost:8000/active/%s/"%active_code
 
         send_status = send_mail(email_subject,email_message,EMAIL_FROM,[email])
-
-        if send_status:
-            pass
-            print("发邮件成功")
+        return send_status
+        # #1：成功  0：错误
+        # if send_status:
+        #     #print("发邮件成功")
+        #     return send_status
+        # else:
+        #     #print("发邮件失败")
+        #     return send_status
 
 

@@ -10,6 +10,7 @@ from django.contrib.auth.hashers import make_password
 
 from use_ckeditor.models import *
 from users.models import UserProfile
+from utils.eamil_send import EmailVerifyRecord
 from .forms import LoginForm,RegisterForm
 from utils.eamil_send import send_email
 # Create your views here.
@@ -41,11 +42,14 @@ class LoginView(View):
             user = authenticate(username=user_name, password=pass_word)
             # 用户登录分两步   第一步认证通过则user是对象，否则是None
             if user is not None:
-                # 第二步 login，向request里面写东西，然后返回到render里面
-                login(request, user)
-                # 正常应该返回到首页
-                return render(request, 'index.html',{}
+                if user.is_active:
+                # 第二步 login，向request里面写东西，然后返回到render里面(在激活的前提下)    ==  激活后才能登录
+                    login(request, user)
+                    # 正常应该返回到首页
+                    return render(request, 'index.html',{}
                               )
+                else:
+                    return  render(request, 'login.html', {"error_msg": "该用户没有激活哦！请激活后再来登录"})
             else:
                 return render(request, 'login.html', {"error_msg": "没有此用户，请检查用户名或密码是否正确"})
         else:
@@ -73,17 +77,29 @@ class RegisterView(View):
                 user_profile.email = user_name
                 user_profile.password = make_password(pass_word)  #密码明文加密
                 # 默认激活状态为false
-                user_profile.is_active = True
-                user_profile.save()
+                user_profile.is_active = False
 
-                send_email(user_name,"register")
-
-                return render(request, "login.html", )
+                try:
+                    send_email_status = send_email(user_name,"register")
+                    if send_email_status ==1:
+                        user_profile.save()
+                        return render(request, "login.html",{"msg":"恭喜您注册成功！请点击邮箱链接激活账户"} )
+                except Exception as e:
+                    return render(request, "login.html", {"msg": "发送邮件失败！请重新注册"})
         else:
             return render(request, 'register.html', {"register_form":register_form})
 
+
+
 class UserActiveView(View):
     def get(self,request,activecode):
+        all_activecode_record = EmailVerifyRecord.objects.filter( code = activecode )
         print(activecode)
-        return render(request, "login.html", {})
+        if all_activecode_record:
+            for record in all_activecode_record:
+                active_user = UserProfile.objects.get(email = record.email )
+                active_user.is_active = True
+                active_user.save()
+
+        return render(request, "login.html", {'msg':'用户激活成功!  请登录'})
 
