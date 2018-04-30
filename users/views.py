@@ -77,13 +77,13 @@ class RegisterView(View):
                 user_profile.save()
 
                 send_email(user_name,"register")
-                pass
+
                 return render(request, "login.html", )
         else:
             return render(request, 'register.html', {"register_form":register_form})
 
 class UserActiveView(View):
-    def get(self,request,avtive_code):
-        print(avtive_code)
+    def get(self,request,activecode):
+        print(activecode)
         return render(request, "login.html", {})
 

@@ -1,7 +1,10 @@
-from users.models import EmailVerifyRecord
 from random import Random
+
+from django.shortcuts import render
 from django.core.mail import send_mail
+
 from lambert.settings import EMAIL_FROM
+from users.models import EmailVerifyRecord
 def random_str(randomlength=8):
     str = ''
     chars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789'
@@ -25,9 +28,12 @@ def send_email(email,send_type="register"):
 
     if send_type == "register":
         email_subject = "25years.xyz 注册激活链接"
-        email_message = "请点击下面的链接激活你的账号：www.25years.xyz/active/%s/"%active_code
+        email_message = "请点击下面的链接激活你的账号：http://localhost:8000/active/%s/"%active_code
 
         send_status = send_mail(email_subject,email_message,EMAIL_FROM,[email])
 
         if send_status:
             pass
+            print("发邮件成功")
+
+
