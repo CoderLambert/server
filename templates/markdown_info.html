@@ -12,28 +12,25 @@
                                 <a href="/markdownPage/{{ artical.id }}">
                                   {{ artical.title}}
                                 </a>
-{#                                <small  style="padding:2em">#}
-{#                                    {{ artical.update_time |date:"Y-m-d H:i:s" }}#}
-{#                                </small>#}
-{#                                {% ifequal artical.original "no" %}#}
-{#                                    <a href="{{ artical.link_address }}"> (转)</a>#}
-{#                                {% endifequal %}#}
+                                <small  style="padding:2em">
+                                    {{ artical.update_time |date:"Y-m-d H:i:s" }}
+                                </small>
+                                {% ifequal artical.original "no" %}
+                                    <a href="{{ artical.link_address }}"> (转)</a>
+                                {% endifequal %}
                             </h3>
                         </div>
-                        <div class="panel-body">
-                            {{ artical.markdown_text |safe|truncatewords:40 }}
-                        </div>
-                        <br>
+                          <pre class="panel-body" style="word-break:break-all">{{ artical.markdown_text |truncatechars:210  }} </pre>
                         <div class="panel-footer">
-{#                            <span class="label label-info" style="margin-right: 4px">#}
-{#                                标签：#}
-{#                            </span>#}
-{##}
-{#                            {% for tag in artical.tag.all %}#}
-{#                                <span class="label label-success" style="margin: 4px">#}
-{#                                    {{  tag  }}#}
-{#                                </span>#}
-{#                            {% endfor %}#}
+                            <span class="label label-info" style="margin-right: 4px">
+                                标签：
+                            </span>
+
+                            {% for tag in artical.tag.all %}
+                                <span class="label label-success" style="margin: 4px">
+                                    {{  tag  }}
+                                </span>
+                            {% endfor %}
                         </div>
                         <br>
                     {% endfor %}

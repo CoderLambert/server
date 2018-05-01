@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http  import HttpResponseRedirect
 from django.contrib.auth import authenticate,login
 from django.contrib.auth.backends import ModelBackend
 # 并集运算
@@ -34,6 +35,8 @@ class LoginView(View):
         return render(request, 'login.html', {})
 
     def post(self,request):
+        """:return 写的太罗嗦了 学会url跳转后这儿摇改一下"""
+
         login_form = LoginForm(request.POST)
         # 1.  先判断是否通过验证
         if login_form.is_valid():
@@ -46,8 +49,7 @@ class LoginView(View):
                 # 第二步 login，向request里面写东西，然后返回到render里面(在激活的前提下)    ==  激活后才能登录
                     login(request, user)
                     # 正常应该返回到首页
-                    return render(request, 'index.html',{}
-                              )
+                    return HttpResponseRedirect('/')  #这儿应该给个跳转的url
                 else:
                     return  render(request, 'login.html', {"error_msg": "该用户没有激活哦！请激活后再来登录"})
             else:
@@ -57,16 +59,17 @@ class LoginView(View):
 
 
 class RegisterView(View):
+
+
     def get(self,request):
         register_form = RegisterForm()
-        return render(request, 'register.html', {
-                'register_form': register_form})
+        return render(request, 'register.html', {'register_form': register_form})
+
     def post(self,request):
         register_form = RegisterForm(request.POST)
         # 1.  先判断是否通过验证
         if register_form.is_valid():
             user_name = request.POST.get("email", "")
-
             if UserProfile.objects.filter(email=user_name):
                 return render(request, 'register.html', {"register_form": register_form,"msg": "用户已存在"})
             else:
@@ -85,7 +88,7 @@ class RegisterView(View):
                         user_profile.save()
                         return render(request, "login.html",{"msg":"恭喜您注册成功！请点击邮箱链接激活账户"} )
                 except Exception as e:
-                    return render(request, "login.html", {"msg": "发送邮件失败！请重新注册,如果发生问题多次请联系管理员，衷心感谢您的理解与支持"})
+                    return render(request, "register.html", {"register_form": register_form,"msg": "发送邮件失败！请重新注册,如果发生问题多次请联系管理员，衷心感谢您的理解与支持"})
         else:
             return render(request, 'register.html', {"register_form":register_form})
 
@@ -95,23 +98,46 @@ class UserActiveView(View):
     """
     我应该在这里面添加下 判断激活码时效性的功能, 当激活链接存在超过一定时间后就失效
     判断时间的方法无非就是，在函数里面取出激活码创建时间，然后与当前时间相减
+    此外如果激活码到了一定时间 可以自动删除就好了
     """
 
     def get(self,request,activecode):
+        """
+
+        :param request:
+        :param activecode:
+        :return: 分 四种情况：
+        1.找不到激活码
+
+        2.找到用户： 1.已激活 --> 提示 2. 未激活 -->  激活
+
+        3.未找到用户 --> 提示
+
+        """
+
         all_activecode_record = EmailVerifyRecord.objects.filter( code = activecode )
         print(activecode)
+
+
         if all_activecode_record:
             for record in all_activecode_record:
-                active_user = UserProfile.objects.get(email = record.email )
-                if active_user.is_active == True:
-                    message = '用户已经激活过了!  请直接登录'
-                else:
-                    active_user.is_active = True
-                    active_user.save()
-                    EmailVerifyRecord.objects.filter(email=record.email).delete()  #删除该用户没用的激活码，清理不必要的数据
-                    message = '用户激活成功!  请登录'
-        else:
-            message = '用户激活码不存在!'
+                try:
+                    active_user = UserProfile.objects.get(email = record.email )
 
-        return render(request, "login.html", {'msg': message})
+                    if active_user.is_active == True:
+                        message = '用户已经激活过了!  请直接登录'
+                    else:
+                        active_user.is_active = True
+                        active_user.save()
+                        EmailVerifyRecord.objects.filter(email=record.email).delete()  #删除该用户没用的激活码，清理不必要的数据
+                        message = '用户激活成功!  请登录'
+
+                    return render(request, "login.html", {'msg': message})
+                except Exception as e:
+                    message = '找不到对应用户,请检查激活码是否正确，如果有问题请联系管理员！衷心感谢您的理解与支持'
+
+        else:
+            message = '激活码无效!'
+        return render(request, 'register.html', { "msg": message})
+
 

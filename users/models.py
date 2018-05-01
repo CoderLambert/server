@@ -77,6 +77,7 @@ class  EditorMarkdownField(models.TextField):
     pass
 
 class markdownArtical(models.Model):
+
     title = models.CharField("标题",max_length=255, blank=True,default='')
     artical_html = EditorMarkdownField("内容",blank=True,default='')
 

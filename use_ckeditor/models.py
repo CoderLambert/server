@@ -32,8 +32,8 @@ class Article(models.Model):
     tag   = models.ManyToManyField(Category,blank=True,verbose_name = '标签名')
 
     class Meta:
-        verbose_name = "文章"
-        verbose_name_plural = "文章"
+        verbose_name = "文章（富文本）"
+        verbose_name_plural = "文章（富文本）"
 
     def save(self,*args, **kwargs):
 

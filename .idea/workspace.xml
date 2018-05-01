@@ -2,13 +2,149 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1acbdc68-b00b-488b-a1a7-d219eef7fd05" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/lambert.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lambert.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/admin/fonts/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/admin/fonts/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/CHANGES.md" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/CHANGES.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/build-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/build-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/contents.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/contents.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/af.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/az.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/az.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/bg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/bn.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/bn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/bs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/cs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/cy.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/cy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/da.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/de-ch.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/de-ch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/el.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/en-au.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/en-au.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/en-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/en-ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/en-gb.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/en-gb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/eo.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/eo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/es-mx.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/es-mx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/et.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/eu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/fa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/fi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/fo.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/fo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/fr-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/fr-ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/gl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/gu.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/gu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/he.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/hi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/hr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/hu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/is.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/is.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/ja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/ka.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/ka.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/km.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/km.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/ku.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/ku.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/lt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/lv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/mk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/mn.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/mn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/ms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/nb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/nl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/no.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/no.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/oc.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/oc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/pt-br.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/ro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/si.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/si.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/sk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/sl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/sq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/sr-latn.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/sr-latn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/sr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/sv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/th.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/tt.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/tt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/ug.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/ug.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/uk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/zh-cn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/lang/zh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/colordialog/dialogs/colordialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/colordialog/dialogs/colordialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/devtools/lang/_translationstatus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/devtools/lang/_translationstatus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/preview/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/preview/preview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/scayt/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/scayt/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/scayt/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/scayt/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/scayt/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/scayt/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/scayt/dialogs/toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/scayt/dialogs/toolbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/templates/dialogs/templates.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/templates/dialogs/templates.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/uicolor/lang/_translationstatus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/uicolor/lang/_translationstatus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/uicolor/yui/assets/yui.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/uicolor/yui/assets/yui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/wsc/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/wsc/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/wsc/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/wsc/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/wsc/dialogs/ciframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/wsc/dialogs/ciframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/wsc/dialogs/wsc.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/wsc/dialogs/wsc.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono-lisa/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono-lisa/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono-lisa/dialog_ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono-lisa/dialog_ie.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono-lisa/dialog_ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono-lisa/dialog_ie8.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono-lisa/dialog_iequirks.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono-lisa/dialog_iequirks.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono-lisa/editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono-lisa/editor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono-lisa/editor_gecko.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono-lisa/editor_gecko.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono-lisa/editor_ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono-lisa/editor_ie.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono-lisa/editor_ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono-lisa/editor_ie8.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono-lisa/editor_iequirks.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono-lisa/editor_iequirks.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono-lisa/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono-lisa/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/dialog_ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/dialog_ie.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/dialog_ie7.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/dialog_ie7.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/dialog_ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/dialog_ie8.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/dialog_iequirks.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/dialog_iequirks.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/editor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/editor_gecko.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/editor_gecko.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/editor_ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/editor_ie.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/editor_ie7.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/editor_ie7.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/editor_ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/editor_ie8.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/editor_iequirks.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/editor_iequirks.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/skins/moono/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/ckeditor/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/galleriffic/css/basic.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/galleriffic/css/basic.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/galleriffic/css/black.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/galleriffic/css/black.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/galleriffic/css/galleriffic-1.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/galleriffic/css/galleriffic-1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/galleriffic/css/galleriffic-2.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/galleriffic/css/galleriffic-2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/galleriffic/css/galleriffic-3.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/galleriffic/css/galleriffic-3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/galleriffic/css/galleriffic-4.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/galleriffic/css/galleriffic-4.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/galleriffic/css/galleriffic-5.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/galleriffic/css/galleriffic-5.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/galleriffic/css/white.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/galleriffic/css/white.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/galleriffic/js/jquery.galleriffic.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/galleriffic/js/jquery.galleriffic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/ckeditor/galleriffic/js/jquery.opacityrollover.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/ckeditor/galleriffic/js/jquery.opacityrollover.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/xadmin/css/xadmin.form.css" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/xadmin/css/xadmin.form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/xadmin/js/xadmin.plugin.formset.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/xadmin/js/xadmin.plugin.formset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/xadmin/js/xadmin.responsive.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/xadmin/js/xadmin.responsive.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collectstatic/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.el.js" beforeDir="false" afterPath="$PROJECT_DIR$/collectstatic/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.el.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/adminx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/markdown_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/markdown_info.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/use_ckeditor/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/use_ckeditor/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/adminx.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/eamil_send.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/eamil_send.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,47 +164,47 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/users/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/use_ckeditor/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="846">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eamil_send.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/utils/eamil_send.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+            <state relative-caret-position="189">
+              <caret line="84" column="25" lean-forward="true" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
               <folding>
-                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lambert/settings.py">
+      <file leaf-file-name="adminx.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/users/adminx.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="24" column="65" lean-forward="true" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
+            <state relative-caret-position="180">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/views.py">
+      <file leaf-file-name="markdown_info.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/markdown_info.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-286">
-              <caret line="87" column="19" lean-forward="true" selection-start-line="87" selection-start-column="19" selection-end-line="87" selection-end-column="19" />
+            <state relative-caret-position="172">
+              <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+              <folding>
+                <element signature="e#597#616#0#HTML" expanded="true" />
+                <element signature="e#1110#1138#0#HTML" expanded="true" />
+                <element signature="e#1249#1274#0#HTML" expanded="true" />
+                <element signature="e#1476#1495#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Artical_info.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/Artical_info.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="14" column="38" selection-start-line="13" selection-end-line="15" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -113,7 +249,6 @@
         <option value="$PROJECT_DIR$/use_ckeditor/admin.py" />
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/templates/error.html" />
-        <option value="$PROJECT_DIR$/users/adminx.py" />
         <option value="$PROJECT_DIR$/release/Lib/site-packages/xadmin/widgets.py" />
         <option value="$PROJECT_DIR$/templates/Bootstrap_CSS_CDN.html" />
         <option value="$PROJECT_DIR$/templates/page.html" />
@@ -122,11 +257,9 @@
         <option value="$PROJECT_DIR$/templates/sign_in.html" />
         <option value="$PROJECT_DIR$/templates/register.html" />
         <option value="$PROJECT_DIR$/users/forms.py" />
-        <option value="$PROJECT_DIR$/markdown/models.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/markdown/urls.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/markdown_info.html" />
         <option value="$PROJECT_DIR$/templates/markdown_index.html" />
         <option value="$PROJECT_DIR$/templates/Artical_info.html" />
         <option value="$PROJECT_DIR$/templates/markdown_base.html" />
@@ -134,14 +267,18 @@
         <option value="$PROJECT_DIR$/markdown/views.py" />
         <option value="$PROJECT_DIR$/use_ckeditor/views.py" />
         <option value="$PROJECT_DIR$/templates/artical_page.html" />
-        <option value="$PROJECT_DIR$/templates/markdown_page.html" />
         <option value="$PROJECT_DIR$/lambert/urls.py" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/lambert/settings.py" />
-        <option value="$PROJECT_DIR$/use_ckeditor/models.py" />
-        <option value="$PROJECT_DIR$/users/models.py" />
-        <option value="$PROJECT_DIR$/users/views.py" />
         <option value="$PROJECT_DIR$/utils/eamil_send.py" />
+        <option value="$PROJECT_DIR$/users/views.py" />
+        <option value="$PROJECT_DIR$/templates/markdown_page.html" />
+        <option value="$PROJECT_DIR$/users/models.py" />
+        <option value="$PROJECT_DIR$/use_ckeditor/models.py" />
+        <option value="$PROJECT_DIR$/markdown/models.py" />
+        <option value="$PROJECT_DIR$/users/adminx.py" />
+        <option value="$PROJECT_DIR$/markdown/adminx.py" />
+        <option value="$PROJECT_DIR$/templates/markdown_info.html" />
       </list>
     </option>
   </component>
@@ -152,11 +289,15 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/collectstatic/markdown/css/lib/codemirror/package.json" />
+      <path value="$PROJECT_DIR$/markdown/static/markdown/css/lib/codemirror/package.json" />
+      <path value="$PROJECT_DIR$/markdown/static/markdown/lib/codemirror/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="206" />
-    <option name="y" value="120" />
+    <option name="x" value="277" />
+    <option name="y" value="27" />
     <option name="width" value="1201" />
     <option name="height" value="555" />
   </component>
@@ -183,6 +324,37 @@
               <item name="release_web" type="b2602c69:ProjectViewProjectNode" />
               <item name="release_web" type="462c0819:PsiDirectoryNode" />
               <item name="markdown" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="release_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="release_web" type="462c0819:PsiDirectoryNode" />
+              <item name="markdown" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="release_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="release_web" type="462c0819:PsiDirectoryNode" />
+              <item name="markdown" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="markdown" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="release_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="release_web" type="462c0819:PsiDirectoryNode" />
+              <item name="markdown" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="release_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="release_web" type="462c0819:PsiDirectoryNode" />
+              <item name="markdown" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="markdown" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="release_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="release_web" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="release_web" type="b2602c69:ProjectViewProjectNode" />
@@ -334,12 +506,12 @@
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.46179965" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.42686892" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.43633276" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12009063" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3582343" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21827795" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="4" />
@@ -347,38 +519,39 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.5966278" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="manage.py@lambert" order="12" weight="0.27193934" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32900432" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.32936078" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.42686892" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21827795" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2344932" />
       <window_info anchor="right" id="SciView" order="4" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32900432" />
-      <window_info anchor="bottom" id="manage.py@lambert" order="12" weight="0.27193934" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.25460455" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.32936078" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.5966278" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.42686892" />
+      <window_info anchor="bottom" id="manage.py@lambert" order="13" weight="0.27193934" />
+      <window_info anchor="bottom" id="Python Console" order="14" weight="0.46179965" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="13" weight="0.4626219" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.5966278" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.17996605" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.32936078" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32900432" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,6 +562,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/use_ckeditor/adminx.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -399,20 +579,72 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="38" />
+      <option name="time" value="39" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/Bootstrap_JS_CDN.html">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/eamil_send.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2016">
+          <caret line="127" column="28" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/markdown_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1206">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/use_ckeditor/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lambert/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lambert/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="65" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/image_upload/images/201804/IMG_20180308_192148.jpg" />
     <entry file="file://$PROJECT_DIR$/templates/sign_in.html" />
     <entry file="file://$PROJECT_DIR$/release/Lib/site-packages/django/contrib/auth/__init__.py" />
     <entry file="file://$PROJECT_DIR$/media/images/2018/04/正面.png" />
-    <entry file="file://$PROJECT_DIR$/image_upload/images/2018/04/正面.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/release/Lib/site-packages/django/core/servers/basehttp.py" />
     <entry file="file://$PROJECT_DIR$/release/Lib/site-packages/django/views/generic/base.py" />
     <entry file="file://$PROJECT_DIR$/release/Lib/site-packages/django/core/handlers/exception.py" />
@@ -422,20 +654,10 @@
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/wsgiref/handlers.py" />
     <entry file="file://$PROJECT_DIR$/release/Lib/site-packages/django/utils/deprecation.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/threading.py" />
-    <entry file="file://$PROJECT_DIR$/requirement.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3645">
           <caret line="135" column="73" selection-start-line="135" selection-start-column="68" selection-end-line="135" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -453,31 +675,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/markdown/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/markdown_info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/markdown_index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Artical_info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -511,27 +712,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/release/Lib/genericpath.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/socketserver.py" />
-    <entry file="file://$PROJECT_DIR$/use_ckeditor/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#53#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/artical_page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/markdown_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -548,9 +735,6 @@
           <caret line="9" column="10" selection-start-line="9" selection-end-line="10" selection-end-column="36" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/markdown/settings.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -571,66 +755,135 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lambert/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="414">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image_upload/images/2018/04/自来也_LfBZxsX.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_upload/images/2018/04/自来也_whEvafC.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_upload/images/2018/04/自来也_7Xp0Jpo.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_upload/image_upload/2018/04/17/img_20180308_192148.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_upload/image_upload/2018/04/17/img_20180308_192148_thumb.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_upload/image_upload/2018/04/17/img_20180308_192326.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_upload/image_upload/2018/04/17/img_20180308_192326_thumb.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use_ckeditor/models.py">
+    <entry file="file://$PROJECT_DIR$/use_ckeditor/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lambert/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="24" column="65" lean-forward="true" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
+        <state relative-caret-position="18">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-286">
-          <caret line="87" column="19" lean-forward="true" selection-start-line="87" selection-start-column="19" selection-end-line="87" selection-end-column="19" />
+        <state relative-caret-position="2016">
+          <caret line="127" column="28" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lambert/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="24" column="65" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markdown/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/use_ckeditor/adminx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="5" lean-forward="true" selection-start-line="3" selection-end-line="7" selection-end-column="73" />
+          <folding>
+            <element signature="e#1#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/use_ckeditor/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#15#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/markdown_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-36">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/eamil_send.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+        <state relative-caret-position="27">
+          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markdown/adminx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/adminx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="84" column="25" lean-forward="true" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Artical_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="14" column="38" selection-start-line="13" selection-end-line="15" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/markdown_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <element signature="e#597#616#0#HTML" expanded="true" />
+            <element signature="e#1110#1138#0#HTML" expanded="true" />
+            <element signature="e#1249#1274#0#HTML" expanded="true" />
+            <element signature="e#1476#1495#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
