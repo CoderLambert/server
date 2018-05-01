@@ -18,6 +18,8 @@
                                 {% ifequal artical.original "no" %}
                                     <a href="{{ artical.link_address }}"> (转)</a>
                                 {% endifequal %}
+                            <a class='pull-right' href="/xadmin/markdown/markdownartical/{{ artical.id }}/update/"><span class="glyphicon glyphicon-edit"></span> </a>
+
                             </h3>
                         </div>
                           <pre class="panel-body" style="word-break:break-all">{{ artical.markdown_text |truncatechars:210  }} </pre>
