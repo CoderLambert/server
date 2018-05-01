@@ -85,21 +85,33 @@ class RegisterView(View):
                         user_profile.save()
                         return render(request, "login.html",{"msg":"恭喜您注册成功！请点击邮箱链接激活账户"} )
                 except Exception as e:
-                    return render(request, "login.html", {"msg": "发送邮件失败！请重新注册"})
+                    return render(request, "login.html", {"msg": "发送邮件失败！请重新注册,如果发生问题多次请联系管理员，衷心感谢您的理解与支持"})
         else:
             return render(request, 'register.html', {"register_form":register_form})
 
 
 
 class UserActiveView(View):
+    """
+    我应该在这里面添加下 判断激活码时效性的功能, 当激活链接存在超过一定时间后就失效
+    判断时间的方法无非就是，在函数里面取出激活码创建时间，然后与当前时间相减
+    """
+
     def get(self,request,activecode):
         all_activecode_record = EmailVerifyRecord.objects.filter( code = activecode )
         print(activecode)
         if all_activecode_record:
             for record in all_activecode_record:
                 active_user = UserProfile.objects.get(email = record.email )
-                active_user.is_active = True
-                active_user.save()
+                if active_user.is_active == True:
+                    message = '用户已经激活过了!  请直接登录'
+                else:
+                    active_user.is_active = True
+                    active_user.save()
+                    EmailVerifyRecord.objects.filter(email=record.email).delete()  #删除该用户没用的激活码，清理不必要的数据
+                    message = '用户激活成功!  请登录'
+        else:
+            message = '用户激活码不存在!'
 
-        return render(request, "login.html", {'msg':'用户激活成功!  请登录'})
+        return render(request, "login.html", {'msg': message})
 

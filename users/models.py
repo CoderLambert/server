@@ -54,6 +54,9 @@ class EmailVerifyRecord(models.Model):
         verbose_name = "邮箱验证码"
         verbose_name_plural = verbose_name
 
+    def __str__(self):
+        return self.email
+
 class Banner(models.Model):
     title = models.CharField(max_length=100, verbose_name="标题")
     image = models.ImageField(upload_to="banner/%Y/%m", verbose_name="轮播图")

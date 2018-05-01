@@ -14,6 +14,7 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+
 class Article(models.Model):
     original_choice = (
                         ("yes","是"),

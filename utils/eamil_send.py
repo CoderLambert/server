@@ -16,6 +16,7 @@ def random_str(randomlength=8):
 
 
 def send_email(email,send_type="register"):
+    """发送邮件函数，以后还要考虑下安全性  邮件内容发送时加密 TTL """
     email_record = EmailVerifyRecord()
     active_code = random_str(20)
     email_record.code = active_code
@@ -28,7 +29,15 @@ def send_email(email,send_type="register"):
 
     if send_type == "register":
         email_subject = "25years.xyz 注册激活链接"
-        email_message = "请点击下面的链接激活你的账号：http://localhost:8000/active/%s/"%active_code
+        email_message = """尊敬的{active_email_name},您好！
+请点击下面的链接激活您的账号,
+http://localhost:8000/active/{email_actiive_code}/"
+                        
+为保障您的帐号安全，请在24小时内点击该链接，您也可以将链接复制到浏览器地址访问。如果您并未尝试激活此帐号，请忽略本邮件，由此给您带来的不便请谅解。
+                        
+本邮件由系统自动发出，请勿直接回复！
+""".format(active_email_name = email,email_actiive_code = active_code)
+        print (email_message)
 
         send_status = send_mail(email_subject,email_message,EMAIL_FROM,[email])
         return send_status
