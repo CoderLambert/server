@@ -22,7 +22,7 @@ class markdownArtical(models.Model):
                         ("yes","是"),
                         ("no","否"),
                     )
-    title = models.CharField("标题",max_length=255, blank=True,default='')
+    title = models.CharField("标题",max_length=255)
     original = models.CharField(max_length=6,choices = original_choice, default = "yes",verbose_name="是否原创")
     link_address = models.URLField(max_length=300,null=True,blank = True,verbose_name="转载地址")
     markdown_text = EditorMarkdownField("内容",blank=True,default='')

@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1acbdc68-b00b-488b-a1a7-d219eef7fd05" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markdown/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/adminx.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/markdown/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use_ckeditor/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/use_ckeditor/adminx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use_ckeditor/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/use_ckeditor/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,7 +62,7 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/use_ckeditor/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
+            <state relative-caret-position="150">
               <caret line="25" column="34" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="34" />
               <folding>
                 <element signature="e#15#65#0" expanded="true" />
@@ -107,8 +104,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/markdown/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+            <state relative-caret-position="132">
+              <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -439,8 +436,8 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.46179965" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.42686892" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.8783988" visible="true" weight="0.3327674" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1691843" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.8783988" visible="true" weight="0.3327674" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1691843" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="4" />
@@ -778,16 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/use_ckeditor/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="34" />
-          <folding>
-            <element signature="e#15#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/use_ckeditor/adminx.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -808,10 +795,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/markdown/models.py">
+    <entry file="file://$PROJECT_DIR$/use_ckeditor/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="34" />
+          <folding>
+            <element signature="e#15#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markdown/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
