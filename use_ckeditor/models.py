@@ -23,7 +23,7 @@ class Article(models.Model):
 
     title = models.CharField('标题', max_length=256)
     original = models.CharField(max_length=6,choices = original_choice, default = "yes",verbose_name="是否原创")
-    link_address = models.CharField(max_length=300,null=True,blank = True,verbose_name="转载地址")
+    link_address = models.URLField(max_length=300,null=True,blank = True,verbose_name="转载地址")
     content = RichTextUploadingField('内容')
     text = models.TextField(null=True,blank = True,verbose_name="纯文本")
     auther =  models.CharField(max_length=200,null = True,blank=True,verbose_name="作者")
@@ -36,7 +36,10 @@ class Article(models.Model):
         verbose_name_plural = "文章（富文本）"
 
     def save(self,*args, **kwargs):
-        self.text = get_html_text(self.content)
+        if self.link_address is None:
+            self.original = "yes"
+        else:
+            self.original = "no"
         super(Article, self).save(*args, **kwargs)
 
     def __str__(self):
