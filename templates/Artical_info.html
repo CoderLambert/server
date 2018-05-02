@@ -24,9 +24,7 @@
                         <div class="panel-body">
                             {{ artical.content |safe|truncatechars_html:150 }}
                         </div>
-                                <small  style="padding:2em">
-                                    {{ artical.update_time |date:"Y-m-d H:i:s" }}
-                                </small>
+
                         <div class="panel-footer">
                             <span class="label label-info" style="margin-right: 4px">
                                 标签：

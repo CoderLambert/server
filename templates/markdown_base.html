@@ -12,13 +12,20 @@
     {% block static_js %} {% endblock %}
 </head>
 <body>
-    {% block navbar %}
-         {% load staticfiles %}
-         {% include 'navbar.html' %}
-    {% endblock %}
+    {% block navbar %}  {% endblock %}
     {% block content %} {% endblock %}
-{% include "Bootstrap_JS_CDN.html" %}
 
+<!--  主页尾脚   -->
+
+<div class="panel-footer">
+    {% block footer %}
+        {% if now %}
+          <h6> 现在时间：{{ now }} </h6>
+        {% endif %}
+    {% endblock %}
+</div>
+{% include "Bootstrap_JS_CDN.html" %}
+{% block Other_JS %}  {% endblock %}
 </body>
 
 </html>

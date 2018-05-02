@@ -1,7 +1,7 @@
-{% extends 'markdown_base.html' %}
+{% extends 'base.html' %}
 
    {% block title %}
-        <title>mkToHtmlDemo</title>
+        <title>文章详情</title>
    {% endblock %}
 
 {% block static_js %}
@@ -22,24 +22,31 @@
 {% endblock %}
    <!--  主页文章内容   -->
 
-
+{% block navbar %}
+     {% load staticfiles %}
+     {% include 'navbar.html' %}
+{% endblock %}
 
    {% block content %}
 
     <div class="container-fluid">
     	<div class="row clearfix">
-
-		    <div class="col-md-2 column">
+		    <div class="col-md-1 column">
 		    </div>
-
 
 		    <div class="col-md-9 column">
                 <!--输入需要转换的markdown文件开始-->
                 <div class="panel panel-primary">
 {#                    目录#}
-                    <div class="panel-heading">
+                    <div class="panel-heading" style="text-align:left;">
                         <h3 class="panel-title">
-                           {{ articleInfo.title}}
+                            {{ articleInfo.title}}
+                             <small  style="padding:2em">
+                                    {{ articleInfo.update_time |date:"Y-m-d H:i:s" }}
+                             </small>
+                             {% ifequal articleInfo.original "no" %}
+                                    <a href="{{ articleInfo.link_address }}" target="_blank"> (转)</a>
+                             {% endifequal %}
                             <a class='pull-right' href="/xadmin/markdown/markdownartical/{{ articleInfo.id }}/update/"><span class="glyphicon glyphicon-edit"></span> </a>
                         </h3>
                     </div>
@@ -54,26 +61,26 @@
                             <textarea id="appendTest{{ articleInfo.id }}" style="display:none;"></textarea>
                     </div>
                 </div>
+                 <br>
+                <div class="panel-footer" style="text-align:left;">
+                    <span class="label label-info" style="margin-right: 4px">标签：</span>
+                        {% for tag in articleInfo.tag.all %}
+                            <span class="label label-success" style="margin: 4px">
+                                {{  tag  }}
+                            </span>
+                        {% endfor %}
                 </div>
-
+                </div>
             </div>
 
 
-            <div class="col-md-1 column">
+            <div class="col-md-2 column">
 		    </div>
-         </div>
-       </div>
-
-
-
-
-
 
     <!--js开始-->
-    <script type="text/javascript">
+            <script type="text/javascript">
         //markDown转HTMl的方法
         $(function(){
-{#            {% for i in artical %}#}
             //先对容器初始化，在需要展示的容器中创建textarea隐藏标签，
             $("#testEditorMdview{{ articleInfo.id }}").html('<textarea id="appendTest{{ articleInfo.id }}" style="display:none;"></textarea>');
             var content=$("#{{ articleInfo.id }}").val();//获取需要转换的内容
@@ -92,6 +99,8 @@
         })
     </script>
      <!--js结束-->
+       </div>
+       </div>
    {% endblock %}
 
 
