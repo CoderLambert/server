@@ -10,7 +10,7 @@ def HomePage(request):
         #dic = {'title__icontains':key_word,'content__icontains':key_word}
         all_articals = Article.objects.filter(Q(title__icontains=key_word) | Q(text__icontains=key_word))
     else:
-        all_articals = Article.objects.all()
+        all_articals = Article.objects.all().order_by('tag')
 
     artical_nums = all_articals.count()
     web_list = Web_link.objects.all()
@@ -20,6 +20,7 @@ def HomePage(request):
         page = 1
     p = Paginator(all_articals, per_page=5, request=request)
     articals = p.page(page)
+
     return render(request, 'index.html',
         {
         'all_articals':articals,

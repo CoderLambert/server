@@ -1,7 +1,7 @@
 {% block artical %}
     <div class="container-fluid">
     	<div class="row clearfix">
-		    <div class="col-md-2 column">
+		    <div class="col-md-1 column">
 		    </div>
 		    <div class="col-md-8 column">
                 <div class="panel panel-primary">
@@ -15,7 +15,7 @@
                                     {{ artical.update_time |date:"Y-m-d H:i:s" }}
                                 </small>
                                 {% ifequal artical.original "no" %}
-                                    <a href="{{ artical.link_address }}"> (转)</a>
+                                    <a href="{{ artical.link_address }} " target="_blank"> (转)</a>
                                 {% endifequal %}
                             <a class='pull-right' href="/xadmin/use_ckeditor/article/{{ artical.id }}/update/"><span class="glyphicon glyphicon-edit"></span> </a>
                             </h3>
@@ -43,7 +43,7 @@
                 </div>
             {% include "page.html" %}
 		    </div>
-		    <div class="col-md-2 column">
+		    <div class="col-md-3 column">
 		    </div>
         </div>
     </div>

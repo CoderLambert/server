@@ -10,14 +10,10 @@ class TestAdmin(object):
     }
 
     list_display = ('title', 'original', 'auther', 'update_time')
+    search_fields = ('title', 'original', 'auther', 'update_time') #要查询的列
+    list_filter = ('title', 'original', 'update_time','markdown_text','tag') #要筛选的列
     fields = ('title','auther','original','link_address','markdown_text','tag')
 
-    def __str__(self):
-        return self.title
-
-    class Meta:
-        verbose_name = "Markdown"
-        verbose_name_plural = "Markdown"
 
 
 xadmin.site.register( markdownArtical, TestAdmin)

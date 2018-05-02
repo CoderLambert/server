@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.http  import HttpResponseRedirect
-from django.contrib.auth import authenticate,login
+from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.backends import ModelBackend
+from django.contrib.auth.decorators import login_required
 # 并集运算
 from django.db.models import Q
 # 基于类实现需要继承的view
@@ -30,13 +31,14 @@ class CustomBackend(ModelBackend):
         except Exception as e:
             return None
 
+
 class LoginView(View):
+
     def get(self,request):
         return render(request, 'login.html', {})
 
     def post(self,request):
         """:return 写的太罗嗦了 学会url跳转后这儿摇改一下"""
-
         login_form = LoginForm(request.POST)
         # 1.  先判断是否通过验证
         if login_form.is_valid():
@@ -58,8 +60,15 @@ class LoginView(View):
             return render(request, 'login.html', {"login_form":login_form})
 
 
-class RegisterView(View):
+#用户注销
+@login_required
+def user_logout(request):
+    logout(request)
+    return HttpResponseRedirect("/login/")
 
+
+#用户注册
+class RegisterView(View):
 
     def get(self,request):
         register_form = RegisterForm()
@@ -93,12 +102,12 @@ class RegisterView(View):
             return render(request, 'register.html', {"register_form":register_form})
 
 
-
+#用户激活
 class UserActiveView(View):
     """
     我应该在这里面添加下 判断激活码时效性的功能, 当激活链接存在超过一定时间后就失效
     判断时间的方法无非就是，在函数里面取出激活码创建时间，然后与当前时间相减
-    此外如果激活码到了一定时间 可以自动删除就好了
+    此外如果激活码到了一定时间 可以自动删除就好了（此外这儿发送邮件的任务 我应该做一个异步处理，可以使用celery）
     """
 
     def get(self,request,activecode):
@@ -117,8 +126,6 @@ class UserActiveView(View):
 
         all_activecode_record = EmailVerifyRecord.objects.filter( code = activecode )
         print(activecode)
-
-
         if all_activecode_record:
             for record in all_activecode_record:
                 try:

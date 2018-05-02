@@ -38,6 +38,9 @@
           </ul>
 
 
+
+          <ul class="nav navbar-nav navbar-right">
+{#          搜索框     #}
           <form class="navbar-form navbar-left" action="" method="post">
               {% csrf_token  %}
             <div class="form-group">
@@ -46,18 +49,24 @@
             <button type="submit" class="btn btn-default">Submit</button>
           </form>
 
-
-          <ul class="nav navbar-nav navbar-right">
-
 {#            这儿需要对 登陆状态进行检测  然后显示不同的状态  #}
 
               {% if request.user.is_authenticated %}
-                  <li style="padding: 0px ">
-                      <a href=""><img width="35px" height="35px" src="{{ MEDIA_URL }}{{ user.image }}"/> &nbsp;{{ user.username  }}</a>
-                  </li>
+{#                  <li style="padding: 0px ">#}
+{#                  <img width="35px" height="35px" src="{{ MEDIA_URL }}{{ user.image }}"/>#}
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">&nbsp;{{ user.username  }} <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="logout/">注销</a></li>
+{#                  <li role="separator" class="divider"></li>#}
+{#                  <li><a href="/xadmin/markdown/markdownartical/add/">Markdown</a></li>#}
+              </ul>
+            </li>
+{#                      <a href=""> 当前用户: &nbsp;{{ user.username  }}</a>#}
+{#                  </li>#}
                   {% else %}
-                      <li><a href="/login/">登录</a></li>
-                      <li><a href="/register/">注册</a></li>
+                      <li><a href="{% url 'login' %}">登录</a></li>
+                      <li><a href="{% url 'register' %}">注册</a></li>
               {% endif %}
 
           </ul>

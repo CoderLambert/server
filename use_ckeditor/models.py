@@ -36,9 +36,7 @@ class Article(models.Model):
         verbose_name_plural = "文章（富文本）"
 
     def save(self,*args, **kwargs):
-
         self.text = get_html_text(self.content)
-
         super(Article, self).save(*args, **kwargs)
 
     def __str__(self):

@@ -20,8 +20,8 @@ from django.conf.urls import include, url,re_path
 from django.views.static import serve
 from lambert.settings import MEDIA_ROOT
 
-from users.views import LoginView,RegisterView,UserActiveView
-from use_ckeditor.views import *
+from users.views import LoginView,user_logout,RegisterView,UserActiveView
+from use_ckeditor.views import HomePage,ArticleInfo
 from markdown.views import Markdown, MarkdownInfo
 
 import xadmin
@@ -33,6 +33,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', HomePage,name="index"),
     path('login/',LoginView.as_view(), name="login"),
+    path('logout/', user_logout, name="logout"),
     path('register/',RegisterView.as_view(), name="register"),
     path('active/<slug:activecode>/', UserActiveView.as_view(), name="user_active"),
     path('articalPage/<int:artical_id>/', ArticleInfo, name="rich_page"),

@@ -29,7 +29,7 @@
                                     {{ articleInfo.update_time |date:"Y-m-d H:i:s" }}
                                 </small>
                                 {% ifequal articleInfo.original "no" %}
-                                    <a href="{{ articleInfo.link_address }}"> (转)</a>
+                                    <a href="{{ articleInfo.link_address }}" target="_blank"> (转)</a>
                                 {% endifequal %}
                                 <a class='pull-right' href="/xadmin/use_ckeditor/article/{{ articleInfo.id }}/update/"><span class="glyphicon glyphicon-edit"></span> </a>
                             </h3>
