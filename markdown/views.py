@@ -22,7 +22,7 @@ def Markdown(request):
         #dic = {'title__icontains':key_word,'content__icontains':key_word}
         all_articals = markdownArtical.objects.filter(Q(title__icontains=key_word) | Q(markdown_text__icontains=key_word))
     else:
-        all_articals = markdownArtical.objects.all()
+        all_articals = markdownArtical.objects.all().order_by('-update_time')
 
     artical_nums = all_articals.count()
     web_list = Web_link.objects.all()
@@ -55,7 +55,7 @@ def MarkdownTag(request,markdownTag_id):
                             Q(markdown_text__icontains=key_word)
             )
     else:
-        all_articals = markdownArtical.objects.filter(tag = markdownTag_id)
+        all_articals = markdownArtical.objects.filter(tag = markdownTag_id).order_by('-update_time')
 
     artical_nums = all_articals.count()
     web_list = Web_link.objects.all()
@@ -87,14 +87,14 @@ def Markdown_time_year(request,artical_year):
     if request.method == 'POST':
         key_word = request.POST.get("keyword","")
         #dic = {'title__icontains':key_word,'content__icontains':key_word}
-        all_articals = markdownArtical.objects.filter(pub_date__year = artical_year).filter(Q(title__icontains=key_word) | Q(markdown_text__icontains=key_word)).order_by('tag')
+        all_articals = markdownArtical.objects.filter(pub_date__year = artical_year).filter(Q(title__icontains=key_word) | Q(markdown_text__icontains=key_word)).order_by('-update_time')
     else:
-        all_articals = markdownArtical.objects.filter(pub_date__year = artical_year).order_by('-update_time')
+        all_articals = markdownArtical.objects.filter(pub_date__year = artical_year)
 
     artical_nums = all_articals.count()
     web_list = Web_link.objects.all().order_by('web_tag')
     dates = markdownArtical.objects.datetimes('pub_date', 'month', order='DESC')
-    category_list = Category.objects.annotate(num_Articles=Count('article')).filter(num_Articles__gt=0).order_by("name")
+    category_list = Category.objects.annotate(num_markdownArticals=Count('markdownartical')).filter(num_markdownArticals__gt=0)
 
     try:
         page = request.GET.get('page', 1)
@@ -126,7 +126,7 @@ def Markdown_time_year_month(request,artical_year,artical_month):
     artical_nums = all_articals.count()
     web_list = Web_link.objects.all().order_by('web_tag')
     dates = markdownArtical.objects.datetimes('pub_date', 'month', order='DESC')
-    category_list = Category.objects.annotate(num_Articles=Count('article')).filter(num_Articles__gt=0).order_by("name")
+    category_list = Category.objects.annotate(num_markdownArticals=Count('markdownartical')).filter(num_markdownArticals__gt=0)
 
     try:
         page = request.GET.get('page', 1)

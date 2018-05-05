@@ -9,6 +9,10 @@
 
     {% block title %} {% endblock %}
     {% include 'Bootstrap_CSS_CDN.html' %}
+    {% block other_css %}
+        {% load staticfiles %}
+        <link href="/static/css/mystyle.css" rel="stylesheet" type="text/css" />
+    {% endblock %}
     {% block static_js %} {% endblock %}
 </head>
 <body>

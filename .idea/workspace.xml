@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1acbdc68-b00b-488b-a1a7-d219eef7fd05" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/static/css/mystyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/markdown_archive.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lambert/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/lambert/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markdown/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/markdown/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Artical_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Artical_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/artical_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/artical_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/markdown_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/markdown_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use_ckeditor/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/use_ckeditor/adminx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use_ckeditor/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/use_ckeditor/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use_ckeditor/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/use_ckeditor/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/mystyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/mystyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/markdown_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/markdown_base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,23 +21,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lambert/urls.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/use_ckeditor/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="48" column="90" selection-start-line="48" selection-start-column="72" selection-end-line="48" selection-end-column="90" />
-              <folding>
-                <element signature="e#631#676#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-18">
+              <caret line="13" column="50" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/use_ckeditor/views.py">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="99" column="5" lean-forward="true" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+            <state relative-caret-position="132">
+              <caret line="14" column="16" selection-start-line="12" selection-end-line="15" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -63,11 +48,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="markdown_info.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="markdown_info.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/markdown_info.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="774">
               <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="markdown_base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/markdown_base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-252">
+              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -81,6 +75,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="mystyle.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/css/mystyle.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="markdown_archive.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/markdown_archive.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,11 +93,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="markdown_page.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/markdown_page.html">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/markdown/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="261">
+              <caret line="96" column="127" selection-start-line="96" selection-start-column="127" selection-end-line="96" selection-end-column="127" />
+              <folding>
+                <element signature="e#22#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/markdown/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="31" column="6" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,6 +145,7 @@
       <find>style</find>
       <find>title</find>
       <find>update_time</find>
+      <find>tag</find>
     </findStrings>
     <replaceStrings>
       <replace>all_articals</replace>
@@ -165,7 +184,6 @@
         <option value="$PROJECT_DIR$/users/adminx.py" />
         <option value="$PROJECT_DIR$/py3env/lib/python3.6/site-packages/xadmin/templates/xadmin/base_site.html" />
         <option value="$PROJECT_DIR$/markdown/adminx.py" />
-        <option value="$PROJECT_DIR$/templates/markdown_base.html" />
         <option value="$PROJECT_DIR$/templates/markdown_page.html" />
         <option value="$PROJECT_DIR$/markdown/templates/markdown/widgets/markdown.html" />
         <option value="$PROJECT_DIR$/markdown/settings.py" />
@@ -178,14 +196,15 @@
         <option value="$PROJECT_DIR$/templates/markdown_tag_list.html" />
         <option value="$PROJECT_DIR$/templates/artical_tag_list.html" />
         <option value="$PROJECT_DIR$/templates/navbar.html" />
-        <option value="$PROJECT_DIR$/static/css/mystyle.css" />
         <option value="$PROJECT_DIR$/templates/archive.html" />
         <option value="$PROJECT_DIR$/use_ckeditor/views.py" />
         <option value="$PROJECT_DIR$/lambert/urls.py" />
         <option value="$PROJECT_DIR$/templates/markdown_archive.html" />
-        <option value="$PROJECT_DIR$/markdown/views.py" />
         <option value="$PROJECT_DIR$/templates/Artical_info.html" />
         <option value="$PROJECT_DIR$/templates/markdown_info.html" />
+        <option value="$PROJECT_DIR$/templates/markdown_base.html" />
+        <option value="$PROJECT_DIR$/markdown/views.py" />
+        <option value="$PROJECT_DIR$/static/css/mystyle.css" />
       </list>
     </option>
   </component>
@@ -408,8 +427,8 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="14" weight="0.46179965" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.42686892" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.8783988" visible="true" weight="0.2580645" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.168429" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.8783988" visible="true" weight="0.08488964" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1971299" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="4" />
@@ -427,29 +446,29 @@
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.32936078" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1971299" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.42686892" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16616315" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="manage.py@lambert" order="13" weight="0.27193934" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32900432" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.5966278" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.8783988" visible="true" weight="0.36672327" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.12160121" side_tool="true" weight="0.3327674" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="right" id="SciView" order="4" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.32936078" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.42686892" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32900432" />
+      <window_info anchor="bottom" id="manage.py@lambert" order="13" weight="0.27193934" />
       <window_info anchor="bottom" id="Python Console" order="14" weight="0.46179965" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.5966278" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.8783988" visible="true" weight="0.4057725" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.12160121" side_tool="true" weight="0.3327674" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.32936078" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -697,27 +716,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/markdown/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/artical_tag_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -732,13 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/mystyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -763,13 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/markdown_base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lambert/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -780,34 +768,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/markdown/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-724">
-          <caret line="113" column="23" selection-start-line="113" selection-start-column="23" selection-end-line="113" selection-end-column="23" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/markdown_page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="72" selection-start-line="72" selection-end-line="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/markdown_archive.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use_ckeditor/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="99" column="5" lean-forward="true" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -827,8 +791,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/markdown_info.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="774">
           <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="14" column="16" selection-start-line="12" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/markdown_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/use_ckeditor/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="13" column="50" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markdown/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="31" column="6" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markdown/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="96" column="127" selection-start-line="96" selection-start-column="127" selection-end-line="96" selection-end-column="127" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/markdown_archive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/mystyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
         </state>
       </provider>
     </entry>
