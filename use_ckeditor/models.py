@@ -46,9 +46,19 @@ class Article(models.Model):
         return self.title
 
 
+class Web_type(models.Model):
+    name = models.CharField("网站分类",max_length=128,null = True,blank=True, unique=True)
+    class Meta:
+        verbose_name = "网站分类"
+        verbose_name_plural = "网站分类"
+
+    def __str__(self):
+        return self.name
+
 class Web_link(models.Model):
     name = models.CharField('网站名称', max_length=256)
     address = models.URLField('URL',max_length = 256)
+    web_tag   = models.ForeignKey(Web_type,null=True,blank=True,verbose_name = '网站分类',on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = "常用站点"

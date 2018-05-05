@@ -42,7 +42,15 @@
             {% include "page.html" %}
 		    </div>
 		    <div class="col-md-3 column">
-		    </div>
+                {# 按标签分类 #}
+                <br>
+               {% include "artical_tag_list.html" %}
+                <br>
+                <br>
+                {#按时间分类#}
+                {% include "archive.html" %}
+
+            </div>
         </div>
     </div>
 {% endblock %}

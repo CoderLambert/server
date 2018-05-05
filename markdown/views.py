@@ -6,11 +6,12 @@ from django.db.models import Q
 from django.http import Http404
 from django.conf import settings
 from django.http import HttpResponse
+from django.db.models.aggregates import Count
 from django.shortcuts import render,get_object_or_404
 from django.views.decorators.csrf import csrf_exempt
 
 from .models import markdownArtical
-from use_ckeditor.models import Web_link
+from use_ckeditor.models import Web_link,Category
 from markdown import settings as markdown_settings
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 
@@ -25,6 +26,9 @@ def Markdown(request):
 
     artical_nums = all_articals.count()
     web_list = Web_link.objects.all()
+    dates = markdownArtical.objects.datetimes('pub_date', 'month', order='DESC')
+    category_list = Category.objects.annotate(num_markdownArticals=Count('markdownartical')).filter(num_markdownArticals__gt=0)
+
     try:
         page = request.GET.get('page', 1)
     except PageNotAnInteger:
@@ -33,19 +37,115 @@ def Markdown(request):
     articals = p.page(page)
     return render(request, 'markdown_index.html',
         {
+        'dates': dates,
         'all_articals':articals,
         'artical_nums':artical_nums,
-        'web_list':web_list
+        'web_list':web_list,
+        'category_list':category_list
         }
                   )
 
+# Create your views here.
+def MarkdownTag(request,markdownTag_id):
+    if request.method == 'POST':
+        key_word = request.POST.get("keyword", "")
+        # dic = {'title__icontains':key_word,'content__icontains':key_word}
+        all_articals = markdownArtical.objects.filter(tag=markdownTag_id).filter(
+                            Q(title__icontains=key_word)  |
+                            Q(markdown_text__icontains=key_word)
+            )
+    else:
+        all_articals = markdownArtical.objects.filter(tag = markdownTag_id)
 
+    artical_nums = all_articals.count()
+    web_list = Web_link.objects.all()
+    dates = markdownArtical.objects.datetimes('pub_date', 'month', order='DESC')
+    category_list = Category.objects.annotate(num_markdownArticals=Count('markdownartical')).filter(num_markdownArticals__gt=0)
+
+    try:
+        page = request.GET.get('page', 1)
+    except PageNotAnInteger:
+        page = 1
+    p = Paginator(all_articals, per_page=5, request=request)
+    articals = p.page(page)
+    return render(request, 'markdown_index.html',
+                      {
+                          'dates': dates,
+                          'all_articals': articals,
+                          'artical_nums': artical_nums,
+                          'web_list': web_list,
+                          'category_list': category_list
+                      }
+                      )
     # try:
     #     articleInfo = markdownArtical.objects.all(pk=artical_id)   #当 get 取不到值的时候会出现 DoesNotExist 异常，所以要保护一下
     #     #print (articleInfo[1].artical_html)
     #     return  render(request,"markdown_page.html",{'articleInfo':articleInfo})
     # except:
     #     return render(request, "error.html")
+def Markdown_time_year(request,artical_year):
+    if request.method == 'POST':
+        key_word = request.POST.get("keyword","")
+        #dic = {'title__icontains':key_word,'content__icontains':key_word}
+        all_articals = markdownArtical.objects.filter(pub_date__year = artical_year).filter(Q(title__icontains=key_word) | Q(markdown_text__icontains=key_word)).order_by('tag')
+    else:
+        all_articals = markdownArtical.objects.filter(pub_date__year = artical_year).order_by('-update_time')
+
+    artical_nums = all_articals.count()
+    web_list = Web_link.objects.all().order_by('web_tag')
+    dates = markdownArtical.objects.datetimes('pub_date', 'month', order='DESC')
+    category_list = Category.objects.annotate(num_Articles=Count('article')).filter(num_Articles__gt=0).order_by("name")
+
+    try:
+        page = request.GET.get('page', 1)
+    except PageNotAnInteger:
+        page = 1
+
+    p = Paginator(all_articals, per_page=5, request=request)
+    articals = p.page(page)
+
+    return render(request, 'markdown_index.html',
+                      {
+                          'dates': dates,
+                          'all_articals': articals,
+                          'artical_nums': artical_nums,
+                          'web_list': web_list,
+                          'category_list': category_list
+                      }
+    )
+
+
+def Markdown_time_year_month(request,artical_year,artical_month):
+    if request.method == 'POST':
+        key_word = request.POST.get("keyword","")
+        #dic = {'title__icontains':key_word,'content__icontains':key_word}
+        all_articals = markdownArtical.objects.filter(pub_date__year = artical_year,pub_date__month = artical_month ).filter(Q(title__icontains=key_word) | Q(markdown_text__icontains=key_word)).order_by('tag')
+    else:
+        all_articals = markdownArtical.objects.filter(pub_date__year = artical_year,pub_date__month = artical_month ).order_by('-update_time')
+
+    artical_nums = all_articals.count()
+    web_list = Web_link.objects.all().order_by('web_tag')
+    dates = markdownArtical.objects.datetimes('pub_date', 'month', order='DESC')
+    category_list = Category.objects.annotate(num_Articles=Count('article')).filter(num_Articles__gt=0).order_by("name")
+
+    try:
+        page = request.GET.get('page', 1)
+    except PageNotAnInteger:
+        page = 1
+
+    p = Paginator(all_articals, per_page=5, request=request)
+    articals = p.page(page)
+
+    return render(request, 'markdown_index.html',
+                      {
+                          'dates': dates,
+                          'all_articals': articals,
+                          'artical_nums': artical_nums,
+                          'web_list': web_list,
+                          'category_list': category_list
+                      }
+    )
+
 
 
 def MarkdownInfo(request,artical_id):
@@ -89,3 +189,5 @@ def upload_image(request):
             destination.write(chunk)
         destination.close()
         return HttpResponse(json.dumps({'success':1,'message':'upload image successed','url':markdown_settings.MEDIA_URL+markdown_settings.MARKDOWN_IMAGE_FLODER+"/"+image_name}, ensure_ascii=False), content_type="application/json")
+
+

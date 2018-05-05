@@ -1,0 +1,12 @@
+<h5>标签：</h5>
+<ul>
+    {% for category in category_list %}
+        <a class="_tags" href="{% url "MarkdownTag"  category.id %}">
+            <span>
+                {{ category.name }}({{ category.num_markdownArticals }})
+            </span>
+        </a>
+    {% empty %}
+        暂无分类！
+    {% endfor %}
+</ul>

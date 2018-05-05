@@ -4,7 +4,7 @@
 		    <div class="col-md-1 column">
 		    </div>
 
-		    <div class="col-md-9 column">
+		    <div class="col-md-8 column">
                 <div class="panel panel-primary">
                     {% for artical in all_articals.object_list %}
                         <div class="panel-heading">
@@ -40,7 +40,15 @@
                 </div>
             {% include "page.html" %}
 		    </div>
-		    <div class="col-md-2 column">
+		    <div class="col-md-3 column">
+                <br>
+                {# 按标签分类 #}
+               {% include "markdown_tag_list.html" %}
+
+                <br>
+                <br>
+                {#按时间分类#}
+                {% include "markdown_archive.html" %}
 		    </div>
         </div>
       </div>
