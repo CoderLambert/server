@@ -15,6 +15,8 @@ def HomePage(request):
 
     artical_nums = all_articals.count()
     web_list = Web_link.objects.all().order_by('web_tag')
+    friend_link_list = FriendLink.objects.all()
+
     dates = Article.objects.datetimes('pub_date', 'month', order='DESC')
     category_list = Category.objects.annotate(num_Articles=Count('article')).filter(num_Articles__gt=0).order_by("name")
 
@@ -30,6 +32,7 @@ def HomePage(request):
         {
         'dates': dates,
         'web_list': web_list,
+		'friend_link_list':friend_link_list,
         'all_articals':articals,
         'artical_nums':artical_nums,
         'category_list': category_list,
@@ -46,6 +49,8 @@ def ArticleTag(request,artical_tag):
 
     artical_nums = all_articals.count()
     web_list = Web_link.objects.all().order_by('web_tag')
+    friend_link_list = FriendLink.objects.all()
+
     dates = Article.objects.datetimes('pub_date', 'month', order='DESC')
     category_list = Category.objects.annotate(num_Articles=Count('article')).filter(num_Articles__gt=0).order_by("name")
 
@@ -61,6 +66,7 @@ def ArticleTag(request,artical_tag):
         {
         'dates': dates,
         'web_list': web_list,
+		'friend_link_list':friend_link_list,
         'all_articals':articals,
         'artical_nums':artical_nums,
         'category_list': category_list,
@@ -78,6 +84,8 @@ def Artical_time_year(request,artical_year):
 
     artical_nums = all_articals.count()
     web_list = Web_link.objects.all().order_by('web_tag')
+    friend_link_list = FriendLink.objects.all()
+
     dates = Article.objects.datetimes('pub_date', 'month', order='DESC')
     category_list = Category.objects.annotate(num_Articles=Count('article')).filter(num_Articles__gt=0).order_by("name")
 
@@ -93,6 +101,7 @@ def Artical_time_year(request,artical_year):
         {
         'dates': dates,
         'web_list': web_list,
+		'friend_link_list':friend_link_list,
         'all_articals':articals,
         'artical_nums':artical_nums,
         'category_list': category_list,
@@ -109,6 +118,8 @@ def Artical_time_year_month(request,artical_year,artical_month):
 
     artical_nums = all_articals.count()
     web_list = Web_link.objects.all().order_by('web_tag')
+    friend_link_list = FriendLink.objects.all()
+
     dates = Article.objects.datetimes('pub_date', 'month', order='DESC')
     category_list = Category.objects.annotate(num_Articles=Count('article')).filter(num_Articles__gt=0).order_by("name")
 
@@ -124,6 +135,7 @@ def Artical_time_year_month(request,artical_year,artical_month):
         {
         'dates': dates,
         'web_list': web_list,
+		'friend_link_list':friend_link_list,
         'all_articals':articals,
         'artical_nums':artical_nums,
         'category_list': category_list,
@@ -136,6 +148,12 @@ def ArticleInfo(request,artical_id):
         print(artical_id)
         articleInfo = Article.objects.get(pk=artical_id)   #当 get 取不到值的时候会出现 DoesNotExist 异常，所以要保护一下
         web_list = Web_link.objects.all()
-        return  render(request,"artical_page.html",{'articleInfo':articleInfo,'web_list':web_list})
+        friend_link_list = FriendLink.objects.all()
+
+        return  render(request,"artical_page.html",{
+		'articleInfo':articleInfo,
+		'web_list':web_list,
+		'friend_link_list':friend_link_list
+		})
     except:
         return render(request, "error.html")

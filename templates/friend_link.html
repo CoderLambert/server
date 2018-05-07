@@ -1,0 +1,10 @@
+<h5>友情链接</h5>
+<!-- 友情链接 -->
+
+<ul>
+     {% for link in friend_link_list %}
+     	<li>
+            <a href="{{ link.address }} ">{{ link.name }} </a>
+        </li>
+    {% endfor %}
+</ul>

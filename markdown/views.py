@@ -11,7 +11,7 @@ from django.shortcuts import render,get_object_or_404
 from django.views.decorators.csrf import csrf_exempt
 
 from .models import markdownArtical
-from use_ckeditor.models import Web_link,Category
+from use_ckeditor.models import Web_link,Category,FriendLink
 from markdown import settings as markdown_settings
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
 
@@ -26,6 +26,7 @@ def Markdown(request):
 
     artical_nums = all_articals.count()
     web_list = Web_link.objects.all()
+    friend_link_list = FriendLink.objects.all()
     dates = markdownArtical.objects.datetimes('pub_date', 'month', order='DESC')
     category_list = Category.objects.annotate(num_markdownArticals=Count('markdownartical')).filter(num_markdownArticals__gt=0)
 
@@ -41,6 +42,7 @@ def Markdown(request):
         'all_articals':articals,
         'artical_nums':artical_nums,
         'web_list':web_list,
+		'friend_link_list':friend_link_list,
         'category_list':category_list
         }
                   )
@@ -59,6 +61,8 @@ def MarkdownTag(request,markdownTag_id):
 
     artical_nums = all_articals.count()
     web_list = Web_link.objects.all()
+    friend_link_list = FriendLink.objects.all()
+
     dates = markdownArtical.objects.datetimes('pub_date', 'month', order='DESC')
     category_list = Category.objects.annotate(num_markdownArticals=Count('markdownartical')).filter(num_markdownArticals__gt=0)
 
@@ -74,6 +78,7 @@ def MarkdownTag(request,markdownTag_id):
                           'all_articals': articals,
                           'artical_nums': artical_nums,
                           'web_list': web_list,
+                          'friend_link_list':friend_link_list,
                           'category_list': category_list
                       }
                       )
@@ -93,6 +98,8 @@ def Markdown_time_year(request,artical_year):
 
     artical_nums = all_articals.count()
     web_list = Web_link.objects.all().order_by('web_tag')
+    friend_link_list = FriendLink.objects.all()
+
     dates = markdownArtical.objects.datetimes('pub_date', 'month', order='DESC')
     category_list = Category.objects.annotate(num_markdownArticals=Count('markdownartical')).filter(num_markdownArticals__gt=0)
 
@@ -110,6 +117,7 @@ def Markdown_time_year(request,artical_year):
                           'all_articals': articals,
                           'artical_nums': artical_nums,
                           'web_list': web_list,
+                          'friend_link_list':friend_link_list,
                           'category_list': category_list
                       }
     )
@@ -125,6 +133,8 @@ def Markdown_time_year_month(request,artical_year,artical_month):
 
     artical_nums = all_articals.count()
     web_list = Web_link.objects.all().order_by('web_tag')
+    friend_link_list = FriendLink.objects.all()
+
     dates = markdownArtical.objects.datetimes('pub_date', 'month', order='DESC')
     category_list = Category.objects.annotate(num_markdownArticals=Count('markdownartical')).filter(num_markdownArticals__gt=0)
 
@@ -142,6 +152,7 @@ def Markdown_time_year_month(request,artical_year,artical_month):
                           'all_articals': articals,
                           'artical_nums': artical_nums,
                           'web_list': web_list,
+                          'friend_link_list':friend_link_list,                          
                           'category_list': category_list
                       }
     )
@@ -152,11 +163,15 @@ def MarkdownInfo(request,artical_id):
     try:
         articleInfo = markdownArtical.objects.get(pk=artical_id)   #当 get 取不到值的时候会出现 DoesNotExist 异常，所以要保护一下
         web_list = Web_link.objects.all()
+        friend_link_list = FriendLink.objects.all()
+
 
         return  render(request,"markdown_page.html",
                        {
                            'articleInfo':articleInfo,
-                           'web_list':web_list}
+                           'web_list':web_list,
+                          'friend_link_list':friend_link_list,	   
+					}
                        )
     except:
         return render(request, "error.html")

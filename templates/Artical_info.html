@@ -8,7 +8,7 @@
                     {% for artical in all_articals.object_list %}
                         <div class="panel-heading">
                             <h3 class="panel-title">
-                                <a href="articalPage/{{ artical.id }}">
+                                <a href="{% url 'rich_page' artical.id %}">
                                   {{ artical.title}}
                                 </a>
                                 <small  style="padding:2em">
@@ -49,6 +49,11 @@
                 <br>
                 {#按时间分类#}
                 {% include "archive.html" %}
+				
+				<br>
+				<br>
+			   {% include "friend_link.html" %}
+
 
             </div>
         </div>

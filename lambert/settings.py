@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '$g+@0327i(29x8_$9*o+t6$0r3hr5@4fk&tej&q5)4@s6bl(v-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True 
 
 ALLOWED_HOSTS = ['*']
 
@@ -217,3 +217,4 @@ EMAIL_HOST_USER = "15751081289@sina.cn" #用户名
 EMAIL_HOST_PASSWORD = "1234qwerQWER"
 EMAIL_USE_TLS= False
 EMAIL_FROM = "15751081289@sina.cn"
+DEFAULT_FROM_EMAIL = "15751081289@sina.cn"

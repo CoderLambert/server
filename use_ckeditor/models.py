@@ -40,6 +40,7 @@ class Article(models.Model):
             self.original = "yes"
         else:
             self.original = "no"
+        self.text = get_html_text(self.content) 
         super(Article, self).save(*args, **kwargs)
 
     def __str__(self):
@@ -66,3 +67,11 @@ class Web_link(models.Model):
 
     def __str__(self):
         return self.name
+		
+class FriendLink(models.Model):
+    name = models.CharField('网站名称', max_length=256)
+    address = models.URLField('URL',max_length = 256)
+
+    class Meta:
+        verbose_name = "友情链接"
+        verbose_name_plural = "友情链接"

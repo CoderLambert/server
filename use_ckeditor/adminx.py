@@ -1,5 +1,5 @@
 import  xadmin
-from .models import Article, Category, Web_link,Web_type
+from .models import Article, Category, Web_link,Web_type,FriendLink
 
 @xadmin.sites.register(Article)
 class AdminArticle(object):
@@ -12,3 +12,5 @@ class AdminArticle(object):
 xadmin.site.register(Category)
 xadmin.site.register(Web_link)
 xadmin.site.register(Web_type)
+xadmin.site.register(FriendLink)
+

@@ -31,7 +31,7 @@ def send_email(email,send_type="register"):
         email_subject = "25years.xyz 注册激活链接"
         email_message = """尊敬的{active_email_name},您好！
 请点击下面的链接激活您的账号,
-http://localhost:8000/active/{email_actiive_code}/"
+http://www.25years.xyz/active/{email_actiive_code}/
                         
 为保障您的帐号安全，请在24小时内点击该链接，您也可以将链接复制到浏览器地址访问。如果您并未尝试激活此帐号，请忽略本邮件，由此给您带来的不便请谅解。
                         

@@ -1,4 +1,4 @@
-#!/home/lambert/web/release_web/py3env/bin/python
+#!/home/ubuntu/25years/release_web/py3env/bin/python
 
 import sys
 import getopt
