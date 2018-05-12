@@ -1,2 +1,2 @@
 uwsgi --stop uwsgi.pid
-/usr/sbin/nginx -s stop
+sudo usr/sbin/nginx -s stop

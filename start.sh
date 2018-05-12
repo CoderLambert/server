@@ -1,2 +1,2 @@
 uwsgi --ini uwsgi.ini
-/usr/sbin/nginx
+sudo usr/sbin/nginx

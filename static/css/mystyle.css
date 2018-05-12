@@ -1,20 +1,19 @@
 a._tags:hover {
     color: #253944;
-    background: rgba(132, 250, 111, 0.14);
+    background: #72c02c;
     text-decoration: none;
 
 }
 a._tags{
-display: inline;
-padding: .2em .4em .6em .0em;
-margin: .4em .2em .4em .0em;
-font-size: 75%;
-font-weight: 700;
-line-height: 1;
-color: #3338ff;
-background-color: rgba(0, 255, 152, 0.09);
-text-align: center;
-white-space: nowrap;
+display:inline-block;
+padding:  0.1rem 0.2rem 0.2rem .3rem;
+margin: .4em  .2em .2em 0.4em;
+font-size: 1.5rem;
+font-weight: 400;
+line-height: 1.5;
+color: #16f;
+background-color: #f7f7f7;
+text-align: left;
 vertical-align: baseline;
-border-radius: .25em;
+border-radius: 50px;
 }

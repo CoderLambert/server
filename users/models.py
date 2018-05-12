@@ -5,6 +5,7 @@ from django.contrib.auth.models import AbstractUser
 
 from django import forms
 from markdown.forms import MarkdownField,XAdminMarkdownField
+from django.contrib.auth import get_user_model
 
 # Create your models here.
 class  UserProfile( AbstractUser ):
