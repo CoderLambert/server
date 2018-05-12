@@ -14,7 +14,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+
 !/markdown/*
 lib64/
 parts/
